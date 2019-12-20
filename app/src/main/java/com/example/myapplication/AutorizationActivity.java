@@ -25,10 +25,6 @@ public class AutorizationActivity extends AppCompatActivity implements View.OnCl
         setContentView(R.layout.activity_autorization);
 
 
-
-
-
-        reg=findViewById(R.id.ActAutorizationRegisterBtn);
         aut=findViewById(R.id.ActAutorizationAutorizationBtn);
         reg.setOnClickListener(this);
         aut.setOnClickListener(this);
@@ -59,9 +55,7 @@ public class AutorizationActivity extends AppCompatActivity implements View.OnCl
                 text.setText("Такого аккаунта не существует");
                 }
             break;
-            case R.id.ActAutorizationRegisterBtn:
-                Intent i = new Intent(this,RegisterActivity.class);
-                startActivity(i);
+
         }
     }
 }
