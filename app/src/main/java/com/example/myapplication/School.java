@@ -7,6 +7,7 @@ public class School {
     HashMap<String,Elective> electives;
     HashMap<Integer,Teacher> teachers;
     HashMap<String,Klass> klassies;
+    HashMap<Integer,Service> services;
     String name;
     String adress;
 
@@ -25,6 +26,7 @@ public class School {
     public void putElective(String name, Elective elective) {
         electives.put(name,elective);
     }
+
     public void deleteElective(String name) {
         electives.remove(name);
     }
@@ -36,6 +38,7 @@ public class School {
     public void putTeachers(int id, Teacher teacher) {
         teachers.put(id,teacher);
     }
+
     public void deleteTeachers(int id, Teacher teacher) {
         teachers.remove(id);
     }

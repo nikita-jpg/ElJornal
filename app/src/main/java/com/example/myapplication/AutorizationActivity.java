@@ -11,6 +11,12 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
+import retrofit2.Retrofit;
+import retrofit2.converter.gson.GsonConverterFactory;
+
 public class AutorizationActivity extends AppCompatActivity implements View.OnClickListener {
 
     Button reg;
@@ -18,12 +24,33 @@ public class AutorizationActivity extends AppCompatActivity implements View.OnCl
     EditText name;
     EditText password;
 
+    String otvFromServer;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_autorization);
 
+        Retrofit retrofit = new Retrofit.Builder()
+                .baseUrl("EvgeneyServer")
+                .addConverterFactory(GsonConverterFactory.create())
+                .build();
+
+        Server server = retrofit.create(Server.class);
+
+        Call<String> person = server.checkPersonFromServer(name.getText().toString(),password.getText().toString());
+
+        person.enqueue(new Callback<String>() {
+            @Override
+            public void onResponse(Call<String> call, Response<String> response) {
+                otvFromServer = response.body();
+            }
+
+            @Override
+            public void onFailure(Call<String> call, Throwable t) {
+
+            }
+        });
 
         aut=findViewById(R.id.ActAutorizationAutorizationBtn);
         reg.setOnClickListener(this);
@@ -31,31 +58,9 @@ public class AutorizationActivity extends AppCompatActivity implements View.OnCl
         name=findViewById(R.id.ActAutorizationNameTxt);
         password=findViewById(R.id.ActAutorizationPasswordTxt);
     }
-    public void finishThis(){
-        finish();
-    }
-
-    private void OpenAccount(String a){
-        Intent i = new Intent();
-    }
-
-
 
     @Override
     public void onClick(View v) {
-        switch (v.getId()){
-            case R.id.ActAutorizationAutorizationBtn:
-                String a = Baza.checkAccount(name.getText().toString(),password.getText().toString());
-                if( a!= ""){
-                    OpenAccount(a);
-                }
-            else {
-                TextView text = findViewById(R.id.ActAutorizationChekTxt);
-                text.setTextColor(ContextCompat.getColor(this,R.color.Red));
-                text.setText("Такого аккаунта не существует");
-                }
-            break;
 
-        }
     }
 }

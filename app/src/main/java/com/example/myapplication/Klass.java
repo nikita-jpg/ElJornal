@@ -20,7 +20,7 @@ public class Klass {
         return raspicanie;
     }
 
-    public void setRaspicanie(HashMap<String, HashMap<Integer, String>> raspicanie) {
+    public void getRaspicanie(HashMap<String, HashMap<Integer, String>> raspicanie) {
         this.raspicanie = raspicanie;
     }
 

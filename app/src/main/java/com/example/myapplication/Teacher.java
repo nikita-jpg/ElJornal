@@ -33,6 +33,10 @@ public class Teacher extends Activity {
     public void setDzIndividual(Learner learner,String data,String dz){
     } //Задаьб дз конкретному ученику
 
+    public void setEstimate(Learner learner,String data,String dz){
+
+    } //Задать дз конкретному ученику
+
     //Геттеры и сеттеры
     public String getGroup() {
         return group;

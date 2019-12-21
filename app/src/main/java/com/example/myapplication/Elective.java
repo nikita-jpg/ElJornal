@@ -15,7 +15,7 @@ public class Elective {
 
 
     public boolean putLearner(Learner pupil){
-        if(nowQuanity == maxQuanity) return false;
+        if(nowQuanity >= maxQuanity) return false;
         else return true;
     }//добавить участника
     public void deleteLearner(int id){
