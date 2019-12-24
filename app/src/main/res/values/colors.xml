@@ -5,4 +5,11 @@
     <color name="colorAccent">#D81B60</color>
     <color name="Red">#a20500</color>
     <color name="backForText">#FF2B98</color>
+    <color name="white">#f1f2f6</color>
+    <color name="btnTaped">#40B446</color>
+    <color name="btn">#edeef0</color>
+    <color name="bkackText">#000002</color>
+    <color name="blue">#6076fd</color>
+    <color name="abs_white">#ffffff</color>
+    <color name="transparent">#00000000</color>
 </resources>

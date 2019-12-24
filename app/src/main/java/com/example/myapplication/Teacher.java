@@ -1,45 +1,83 @@
 package com.example.myapplication;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
+import android.os.Parcel;
+import android.os.Parcelable;
+import android.widget.TextView;
 
 import androidx.annotation.Nullable;
+
+import com.google.gson.Gson;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 
 public class Teacher extends Activity {
-    final String group = "Teacher";
+    int id;
+    String position;
+    String login;
+    String password;
     String name;
-    String firstName;
-    String patronymic;
-    String subject;
-    String teacherClass;
-    int id;//Индивидуальный id
-    /*Расписание формата <дата<номер урока,класс>>*/
-    HashMap<String, HashMap<Integer,String>> raspicanie;
-    HashMap<String,Elective> electives;//элективы
+    String surname;
+    String email;
+    String phone;
+    String qualification;
+    Boolean is_admin;
+    Integer permit;
 
+    Teacher(int id,String position,String login,String password,String name,String surname,String email,String phone,String qualification,Boolean is_admin,Integer permit){
+        this.id=id;
+        this.position=position;
+        this.login=login;
+        this.password=password;
+        this.name=name;
+        this.surname=surname;
+        this.email=email;
+        this.phone=phone;
+        this.qualification=qualification;
+        this.is_admin=is_admin;
+        this.permit=permit;
+    }
 
-    @Override
-    protected void onCreate(@Nullable Bundle savedInstanceState) {
+    protected void onCreate(@Nullable Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_teacher);
     }
 
-    public void setDzClass(String klass, String data, String dz){
 
-    }//Задать дз всем ученикам в классе
-    public void setDzIndividual(Learner learner,String data,String dz){
-    } //Задаьб дз конкретному ученику
+    //Getters and Setters
+    public int getId() {
+        return id;
+    }
 
-    public void setEstimate(Learner learner,String data,String dz){
+    public void setId(int id) {
+        this.id = id;
+    }
 
-    } //Задать дз конкретному ученику
+    public String getPosition() {
+        return position;
+    }
 
-    //Геттеры и сеттеры
-    public String getGroup() {
-        return group;
+    public void setPosition(String position) {
+        this.position = position;
+    }
+
+    public String getLogin() {
+        return login;
+    }
+
+    public void setLogin(String login) {
+        this.login = login;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
     }
 
     public String getName() {
@@ -50,60 +88,52 @@ public class Teacher extends Activity {
         this.name = name;
     }
 
-    public String getFirstName() {
-        return firstName;
+    public String getSurname() {
+        return surname;
     }
 
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
+    public void setSurname(String surname) {
+        this.surname = surname;
     }
 
-    public String getPatronymic() {
-        return patronymic;
+    public String getEmail() {
+        return email;
     }
 
-    public void setPatronymic(String patronymic) {
-        this.patronymic = patronymic;
+    public void setEmail(String email) {
+        this.email = email;
     }
 
-    public String getSubject() {
-        return subject;
+    public String getPhone() {
+        return phone;
     }
 
-    public void setSubject(String subject) {
-        this.subject = subject;
+    public void setPhone(String phone) {
+        this.phone = phone;
     }
 
-    public String getTeacherClass() {
-        return teacherClass;
+    public String getQualification() {
+        return qualification;
     }
 
-    public void setTeacherClass(String teacherClass) {
-        this.teacherClass = teacherClass;
+    public void setQualification(String qualification) {
+        this.qualification = qualification;
     }
 
-    public HashMap<String, HashMap<Integer, String>> getRaspicanie() {
-        return raspicanie;
+    public Boolean getIs_admin() {
+        return is_admin;
     }
 
-    public HashMap<String,Elective> getElectives() {
-        return electives;
+    public void setIs_admin(Boolean is_admin) {
+        this.is_admin = is_admin;
     }
 
-    public int getId() {
-        return id;
+    public Integer getPermit() {
+        return permit;
     }
 
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public void setRaspicanie(HashMap<String, HashMap<Integer, String>> raspicanie) {
-        this.raspicanie = raspicanie;
-    }
-
-    public void setElectives(HashMap<String,Elective> electives) {
-        this.electives = electives;
+    public void setPermit(Integer permit) {
+        this.permit = permit;
     }
 
 }

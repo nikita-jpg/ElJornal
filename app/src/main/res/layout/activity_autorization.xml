@@ -1,33 +1,114 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <EditText
-        android:id="@+id/ActAutorizationNameTxt"
+    <VideoView
+        android:id="@+id/video_autorization_view"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:hint="Name" />
+        android:layout_height="match_parent"
+        android:layout_gravity="center" />
 
-    <EditText
-        android:id="@+id/ActAutorizationPasswordTxt"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:hint="Password" />
+        android:background="@drawable/reg_lay"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="@+id/video_autorization_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.39"
+        android:layout_margin="10dp">
 
-    <Button
-        android:id="@+id/ActAutorizationAutorizationBtn"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Autorization" />
+        <EditText
+            android:id="@+id/ActAutorizationNameTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:theme="@style/style_edit"
+            android:hint="Имя"
+            android:gravity="center"
+            android:inputType="textPersonName"
+            />
 
-    <TextView
-        android:id="@+id/ActAutorizationChekTxt"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-         />
-</LinearLayout>
+        <EditText
+            android:id="@+id/ActAutorizationPasswordTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:theme="@style/style_edit"
+            android:hint="Пароль"
+            android:gravity="center"
+            android:inputType="textPersonName"
+            android:textColor="@color/bkackText" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_margin="4dp">
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/botton"
+                android:text="Button"
+                android:gravity="center"
+                android:textColor="@color/bkackText" />
+
+            <Button
+                android:id="@+id/btn_aut_parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/botton"
+                android:text="Родитель"
+                android:gravity="center"
+                android:textColor="@color/bkackText" />
+
+            <Button
+                android:id="@+id/btn_aut_learner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/botton"
+                android:text="Ученик"
+                android:gravity="center"
+                android:textColor="@color/bkackText" />
+
+            <Button
+                android:id="@+id/btn_aut_teacher"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/botton"
+                android:text="Учитель"
+                android:gravity="center"
+                android:textColor="@color/bkackText" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_aut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/botton_aut"
+            android:padding="10dp"
+            android:layout_margin="10dp"
+            android:text="Авторизоваться"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

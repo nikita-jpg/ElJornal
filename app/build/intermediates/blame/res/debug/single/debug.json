@@ -20,6 +20,10 @@
         "source": "C:\\Users\\Nikita\\.gradle\\caches\\transforms-2\\files-2.1\\dfb17c32c9e1bced7bb89f3e844a7607\\appcompat-1.0.2\\res\\color-v23\\abc_tint_seek_thumb.xml"
     },
     {
+        "merged": "C:\\Users\\Nikita\\Desktop\\Samsung\\GitHub\\ElKornalJava\\ElJornal\\app\\build\\intermediates\\res\\merged\\debug\\raw_video_learner_meny.mp4.flat",
+        "source": "C:\\Users\\Nikita\\Desktop\\Samsung\\GitHub\\ElKornalJava\\ElJornal\\app\\src\\main\\res\\raw\\video_learner_meny.mp4"
+    },
+    {
         "merged": "C:\\Users\\Nikita\\Desktop\\Samsung\\GitHub\\ElKornalJava\\ElJornal\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_text_select_handle_left_mtrl_dark.png.flat",
         "source": "C:\\Users\\Nikita\\.gradle\\caches\\transforms-2\\files-2.1\\dfb17c32c9e1bced7bb89f3e844a7607\\appcompat-1.0.2\\res\\drawable-xxxhdpi-v4\\abc_text_select_handle_left_mtrl_dark.png"
     },
@@ -52,12 +56,12 @@
         "source": "C:\\Users\\Nikita\\.gradle\\caches\\transforms-2\\files-2.1\\dfb17c32c9e1bced7bb89f3e844a7607\\appcompat-1.0.2\\res\\drawable-mdpi-v4\\abc_popup_background_mtrl_mult.9.png"
     },
     {
-        "merged": "C:\\Users\\Nikita\\Desktop\\Samsung\\GitHub\\ElKornalJava\\ElJornal\\app\\build\\intermediates\\res\\merged\\debug\\color-v23_abc_tint_switch_track.xml.flat",
-        "source": "C:\\Users\\Nikita\\.gradle\\caches\\transforms-2\\files-2.1\\dfb17c32c9e1bced7bb89f3e844a7607\\appcompat-1.0.2\\res\\color-v23\\abc_tint_switch_track.xml"
-    },
-    {
         "merged": "C:\\Users\\Nikita\\Desktop\\Samsung\\GitHub\\ElKornalJava\\ElJornal\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_launcher_background.png.flat",
         "source": "C:\\Users\\Nikita\\Desktop\\Samsung\\GitHub\\ElKornalJava\\ElJornal\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_launcher_background.png"
+    },
+    {
+        "merged": "C:\\Users\\Nikita\\Desktop\\Samsung\\GitHub\\ElKornalJava\\ElJornal\\app\\build\\intermediates\\res\\merged\\debug\\color-v23_abc_tint_switch_track.xml.flat",
+        "source": "C:\\Users\\Nikita\\.gradle\\caches\\transforms-2\\files-2.1\\dfb17c32c9e1bced7bb89f3e844a7607\\appcompat-1.0.2\\res\\color-v23\\abc_tint_switch_track.xml"
     },
     {
         "merged": "C:\\Users\\Nikita\\Desktop\\Samsung\\GitHub\\ElKornalJava\\ElJornal\\app\\build\\intermediates\\res\\merged\\debug\\anim_abc_tooltip_exit.xml.flat",
@@ -74,6 +78,10 @@
     {
         "merged": "C:\\Users\\Nikita\\Desktop\\Samsung\\GitHub\\ElKornalJava\\ElJornal\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_ic_star_half_black_16dp.png.flat",
         "source": "C:\\Users\\Nikita\\.gradle\\caches\\transforms-2\\files-2.1\\dfb17c32c9e1bced7bb89f3e844a7607\\appcompat-1.0.2\\res\\drawable-xhdpi-v4\\abc_ic_star_half_black_16dp.png"
+    },
+    {
+        "merged": "C:\\Users\\Nikita\\Desktop\\Samsung\\GitHub\\ElKornalJava\\ElJornal\\app\\build\\intermediates\\res\\merged\\debug\\layout_academic_performance_activity.xml.flat",
+        "source": "C:\\Users\\Nikita\\Desktop\\Samsung\\GitHub\\ElKornalJava\\ElJornal\\app\\src\\main\\res\\layout\\academic_performance_activity.xml"
     },
     {
         "merged": "C:\\Users\\Nikita\\Desktop\\Samsung\\GitHub\\ElKornalJava\\ElJornal\\app\\build\\intermediates\\res\\merged\\debug\\color-v23_abc_tint_default.xml.flat",
@@ -112,10 +120,6 @@
         "source": "C:\\Users\\Nikita\\.gradle\\caches\\transforms-2\\files-2.1\\dfb17c32c9e1bced7bb89f3e844a7607\\appcompat-1.0.2\\res\\drawable-hdpi-v4\\abc_scrubber_primary_mtrl_alpha.9.png"
     },
     {
-        "merged": "C:\\Users\\Nikita\\Desktop\\Samsung\\GitHub\\ElKornalJava\\ElJornal\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_register.xml.flat",
-        "source": "C:\\Users\\Nikita\\Desktop\\Samsung\\GitHub\\ElKornalJava\\ElJornal\\app\\src\\main\\res\\layout\\activity_register.xml"
-    },
-    {
         "merged": "C:\\Users\\Nikita\\Desktop\\Samsung\\GitHub\\ElKornalJava\\ElJornal\\app\\build\\intermediates\\res\\merged\\debug\\layout_notification_template_part_time.xml.flat",
         "source": "C:\\Users\\Nikita\\.gradle\\caches\\transforms-2\\files-2.1\\46da25c3e2ae6308b2227b660caa604d\\core-1.0.1\\res\\layout\\notification_template_part_time.xml"
     },
@@ -148,12 +152,12 @@
         "source": "C:\\Users\\Nikita\\.gradle\\caches\\transforms-2\\files-2.1\\dfb17c32c9e1bced7bb89f3e844a7607\\appcompat-1.0.2\\res\\drawable-xxhdpi-v4\\abc_ic_star_half_black_36dp.png"
     },
     {
-        "merged": "C:\\Users\\Nikita\\Desktop\\Samsung\\GitHub\\ElKornalJava\\ElJornal\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldrtl-mdpi-v17_abc_ic_menu_cut_mtrl_alpha.png.flat",
-        "source": "C:\\Users\\Nikita\\.gradle\\caches\\transforms-2\\files-2.1\\dfb17c32c9e1bced7bb89f3e844a7607\\appcompat-1.0.2\\res\\drawable-ldrtl-mdpi-v17\\abc_ic_menu_cut_mtrl_alpha.png"
-    },
-    {
         "merged": "C:\\Users\\Nikita\\Desktop\\Samsung\\GitHub\\ElKornalJava\\ElJornal\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_text_select_handle_middle_mtrl_dark.png.flat",
         "source": "C:\\Users\\Nikita\\.gradle\\caches\\transforms-2\\files-2.1\\dfb17c32c9e1bced7bb89f3e844a7607\\appcompat-1.0.2\\res\\drawable-xxhdpi-v4\\abc_text_select_handle_middle_mtrl_dark.png"
+    },
+    {
+        "merged": "C:\\Users\\Nikita\\Desktop\\Samsung\\GitHub\\ElKornalJava\\ElJornal\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldrtl-mdpi-v17_abc_ic_menu_cut_mtrl_alpha.png.flat",
+        "source": "C:\\Users\\Nikita\\.gradle\\caches\\transforms-2\\files-2.1\\dfb17c32c9e1bced7bb89f3e844a7607\\appcompat-1.0.2\\res\\drawable-ldrtl-mdpi-v17\\abc_ic_menu_cut_mtrl_alpha.png"
     },
     {
         "merged": "C:\\Users\\Nikita\\Desktop\\Samsung\\GitHub\\ElKornalJava\\ElJornal\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_ic_commit_search_api_mtrl_alpha.png.flat",
@@ -264,12 +268,12 @@
         "source": "C:\\Users\\Nikita\\.gradle\\caches\\transforms-2\\files-2.1\\dfb17c32c9e1bced7bb89f3e844a7607\\appcompat-1.0.2\\res\\drawable-xhdpi-v4\\abc_ic_menu_cut_mtrl_alpha.png"
     },
     {
-        "merged": "C:\\Users\\Nikita\\Desktop\\Samsung\\GitHub\\ElKornalJava\\ElJornal\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_yor_account.xml.flat",
-        "source": "C:\\Users\\Nikita\\Desktop\\Samsung\\GitHub\\ElKornalJava\\ElJornal\\app\\src\\main\\res\\layout\\activity_yor_account.xml"
-    },
-    {
         "merged": "C:\\Users\\Nikita\\Desktop\\Samsung\\GitHub\\ElKornalJava\\ElJornal\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldrtl-xxhdpi-v17_abc_spinner_mtrl_am_alpha.9.png.flat",
         "source": "C:\\Users\\Nikita\\.gradle\\caches\\transforms-2\\files-2.1\\dfb17c32c9e1bced7bb89f3e844a7607\\appcompat-1.0.2\\res\\drawable-ldrtl-xxhdpi-v17\\abc_spinner_mtrl_am_alpha.9.png"
+    },
+    {
+        "merged": "C:\\Users\\Nikita\\Desktop\\Samsung\\GitHub\\ElKornalJava\\ElJornal\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_alert_dz.xml.flat",
+        "source": "C:\\Users\\Nikita\\Desktop\\Samsung\\GitHub\\ElKornalJava\\ElJornal\\app\\src\\main\\res\\layout\\activity_alert_dz.xml"
     },
     {
         "merged": "C:\\Users\\Nikita\\Desktop\\Samsung\\GitHub\\ElKornalJava\\ElJornal\\app\\build\\intermediates\\res\\merged\\debug\\color_abc_search_url_text.xml.flat",
@@ -304,6 +308,10 @@
         "source": "C:\\Users\\Nikita\\.gradle\\caches\\transforms-2\\files-2.1\\dfb17c32c9e1bced7bb89f3e844a7607\\appcompat-1.0.2\\res\\drawable-xhdpi-v4\\abc_cab_background_top_mtrl_alpha.9.png"
     },
     {
+        "merged": "C:\\Users\\Nikita\\Desktop\\Samsung\\GitHub\\ElKornalJava\\ElJornal\\app\\build\\intermediates\\res\\merged\\debug\\drawable_reg_lay.xml.flat",
+        "source": "C:\\Users\\Nikita\\Desktop\\Samsung\\GitHub\\ElKornalJava\\ElJornal\\app\\src\\main\\res\\drawable\\reg_lay.xml"
+    },
+    {
         "merged": "C:\\Users\\Nikita\\Desktop\\Samsung\\GitHub\\ElKornalJava\\ElJornal\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
         "source": "C:\\Users\\Nikita\\Desktop\\Samsung\\GitHub\\ElKornalJava\\ElJornal\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png"
     },
@@ -336,6 +344,10 @@
         "source": "C:\\Users\\Nikita\\.gradle\\caches\\transforms-2\\files-2.1\\dfb17c32c9e1bced7bb89f3e844a7607\\appcompat-1.0.2\\res\\drawable\\abc_btn_check_material.xml"
     },
     {
+        "merged": "C:\\Users\\Nikita\\Desktop\\Samsung\\GitHub\\ElKornalJava\\ElJornal\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_for_teacher_make_dz.xml.flat",
+        "source": "C:\\Users\\Nikita\\Desktop\\Samsung\\GitHub\\ElKornalJava\\ElJornal\\app\\src\\main\\res\\layout\\activity_for_teacher_make_dz.xml"
+    },
+    {
         "merged": "C:\\Users\\Nikita\\Desktop\\Samsung\\GitHub\\ElKornalJava\\ElJornal\\app\\build\\intermediates\\res\\merged\\debug\\color_abc_primary_text_material_dark.xml.flat",
         "source": "C:\\Users\\Nikita\\.gradle\\caches\\transforms-2\\files-2.1\\dfb17c32c9e1bced7bb89f3e844a7607\\appcompat-1.0.2\\res\\color\\abc_primary_text_material_dark.xml"
     },
@@ -350,6 +362,10 @@
     {
         "merged": "C:\\Users\\Nikita\\Desktop\\Samsung\\GitHub\\ElKornalJava\\ElJornal\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldrtl-xhdpi-v17_abc_ic_menu_copy_mtrl_am_alpha.png.flat",
         "source": "C:\\Users\\Nikita\\.gradle\\caches\\transforms-2\\files-2.1\\dfb17c32c9e1bced7bb89f3e844a7607\\appcompat-1.0.2\\res\\drawable-ldrtl-xhdpi-v17\\abc_ic_menu_copy_mtrl_am_alpha.png"
+    },
+    {
+        "merged": "C:\\Users\\Nikita\\Desktop\\Samsung\\GitHub\\ElKornalJava\\ElJornal\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_teacher.xml.flat",
+        "source": "C:\\Users\\Nikita\\Desktop\\Samsung\\GitHub\\ElKornalJava\\ElJornal\\app\\src\\main\\res\\layout\\activity_teacher.xml"
     },
     {
         "merged": "C:\\Users\\Nikita\\Desktop\\Samsung\\GitHub\\ElKornalJava\\ElJornal\\app\\build\\intermediates\\res\\merged\\debug\\layout_notification_template_part_chronometer.xml.flat",
@@ -472,12 +488,12 @@
         "source": "C:\\Users\\Nikita\\.gradle\\caches\\transforms-2\\files-2.1\\dfb17c32c9e1bced7bb89f3e844a7607\\appcompat-1.0.2\\res\\drawable\\abc_spinner_textfield_background_material.xml"
     },
     {
-        "merged": "C:\\Users\\Nikita\\Desktop\\Samsung\\GitHub\\ElKornalJava\\ElJornal\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_btn_check_to_on_mtrl_015.png.flat",
-        "source": "C:\\Users\\Nikita\\.gradle\\caches\\transforms-2\\files-2.1\\dfb17c32c9e1bced7bb89f3e844a7607\\appcompat-1.0.2\\res\\drawable-mdpi-v4\\abc_btn_check_to_on_mtrl_015.png"
-    },
-    {
         "merged": "C:\\Users\\Nikita\\Desktop\\Samsung\\GitHub\\ElKornalJava\\ElJornal\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_ic_star_half_black_36dp.png.flat",
         "source": "C:\\Users\\Nikita\\.gradle\\caches\\transforms-2\\files-2.1\\dfb17c32c9e1bced7bb89f3e844a7607\\appcompat-1.0.2\\res\\drawable-hdpi-v4\\abc_ic_star_half_black_36dp.png"
+    },
+    {
+        "merged": "C:\\Users\\Nikita\\Desktop\\Samsung\\GitHub\\ElKornalJava\\ElJornal\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_btn_check_to_on_mtrl_015.png.flat",
+        "source": "C:\\Users\\Nikita\\.gradle\\caches\\transforms-2\\files-2.1\\dfb17c32c9e1bced7bb89f3e844a7607\\appcompat-1.0.2\\res\\drawable-mdpi-v4\\abc_btn_check_to_on_mtrl_015.png"
     },
     {
         "merged": "C:\\Users\\Nikita\\Desktop\\Samsung\\GitHub\\ElKornalJava\\ElJornal\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_text_select_handle_middle_mtrl_dark.png.flat",
@@ -574,6 +590,10 @@
     {
         "merged": "C:\\Users\\Nikita\\Desktop\\Samsung\\GitHub\\ElKornalJava\\ElJornal\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_ic_menu_selectall_mtrl_alpha.png.flat",
         "source": "C:\\Users\\Nikita\\.gradle\\caches\\transforms-2\\files-2.1\\dfb17c32c9e1bced7bb89f3e844a7607\\appcompat-1.0.2\\res\\drawable-mdpi-v4\\abc_ic_menu_selectall_mtrl_alpha.png"
+    },
+    {
+        "merged": "C:\\Users\\Nikita\\Desktop\\Samsung\\GitHub\\ElKornalJava\\ElJornal\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_rasp.xml.flat",
+        "source": "C:\\Users\\Nikita\\Desktop\\Samsung\\GitHub\\ElKornalJava\\ElJornal\\app\\src\\main\\res\\layout\\activity_rasp.xml"
     },
     {
         "merged": "C:\\Users\\Nikita\\Desktop\\Samsung\\GitHub\\ElKornalJava\\ElJornal\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_btn_switch_to_on_mtrl_00012.9.png.flat",
@@ -680,6 +700,10 @@
         "source": "C:\\Users\\Nikita\\.gradle\\caches\\transforms-2\\files-2.1\\dfb17c32c9e1bced7bb89f3e844a7607\\appcompat-1.0.2\\res\\drawable-hdpi-v4\\abc_ic_star_half_black_16dp.png"
     },
     {
+        "merged": "C:\\Users\\Nikita\\Desktop\\Samsung\\GitHub\\ElKornalJava\\ElJornal\\app\\build\\intermediates\\res\\merged\\debug\\drawable_botton_for_learner_reg.xml.flat",
+        "source": "C:\\Users\\Nikita\\Desktop\\Samsung\\GitHub\\ElKornalJava\\ElJornal\\app\\src\\main\\res\\drawable\\botton_for_learner_reg.xml"
+    },
+    {
         "merged": "C:\\Users\\Nikita\\Desktop\\Samsung\\GitHub\\ElKornalJava\\ElJornal\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_list_divider_material.xml.flat",
         "source": "C:\\Users\\Nikita\\.gradle\\caches\\transforms-2\\files-2.1\\dfb17c32c9e1bced7bb89f3e844a7607\\appcompat-1.0.2\\res\\drawable\\abc_list_divider_material.xml"
     },
@@ -692,12 +716,12 @@
         "source": "C:\\Users\\Nikita\\.gradle\\caches\\transforms-2\\files-2.1\\dfb17c32c9e1bced7bb89f3e844a7607\\appcompat-1.0.2\\res\\drawable-hdpi-v4\\abc_btn_radio_to_on_mtrl_015.png"
     },
     {
-        "merged": "C:\\Users\\Nikita\\Desktop\\Samsung\\GitHub\\ElKornalJava\\ElJornal\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_ic_star_black_16dp.png.flat",
-        "source": "C:\\Users\\Nikita\\.gradle\\caches\\transforms-2\\files-2.1\\dfb17c32c9e1bced7bb89f3e844a7607\\appcompat-1.0.2\\res\\drawable-hdpi-v4\\abc_ic_star_black_16dp.png"
-    },
-    {
         "merged": "C:\\Users\\Nikita\\Desktop\\Samsung\\GitHub\\ElKornalJava\\ElJornal\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_list_selector_disabled_holo_dark.9.png.flat",
         "source": "C:\\Users\\Nikita\\.gradle\\caches\\transforms-2\\files-2.1\\dfb17c32c9e1bced7bb89f3e844a7607\\appcompat-1.0.2\\res\\drawable-xhdpi-v4\\abc_list_selector_disabled_holo_dark.9.png"
+    },
+    {
+        "merged": "C:\\Users\\Nikita\\Desktop\\Samsung\\GitHub\\ElKornalJava\\ElJornal\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_ic_star_black_16dp.png.flat",
+        "source": "C:\\Users\\Nikita\\.gradle\\caches\\transforms-2\\files-2.1\\dfb17c32c9e1bced7bb89f3e844a7607\\appcompat-1.0.2\\res\\drawable-hdpi-v4\\abc_ic_star_black_16dp.png"
     },
     {
         "merged": "C:\\Users\\Nikita\\Desktop\\Samsung\\GitHub\\ElKornalJava\\ElJornal\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_ic_star_half_black_36dp.png.flat",
@@ -716,12 +740,12 @@
         "source": "C:\\Users\\Nikita\\.gradle\\caches\\transforms-2\\files-2.1\\dfb17c32c9e1bced7bb89f3e844a7607\\appcompat-1.0.2\\res\\drawable-xxxhdpi-v4\\abc_btn_check_to_on_mtrl_015.png"
     },
     {
-        "merged": "C:\\Users\\Nikita\\Desktop\\Samsung\\GitHub\\ElKornalJava\\ElJornal\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_text_select_handle_right_mtrl_light.png.flat",
-        "source": "C:\\Users\\Nikita\\.gradle\\caches\\transforms-2\\files-2.1\\dfb17c32c9e1bced7bb89f3e844a7607\\appcompat-1.0.2\\res\\drawable-xhdpi-v4\\abc_text_select_handle_right_mtrl_light.png"
-    },
-    {
         "merged": "C:\\Users\\Nikita\\Desktop\\Samsung\\GitHub\\ElKornalJava\\ElJornal\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21_notification_template_custom_big.xml.flat",
         "source": "C:\\Users\\Nikita\\.gradle\\caches\\transforms-2\\files-2.1\\46da25c3e2ae6308b2227b660caa604d\\core-1.0.1\\res\\layout-v21\\notification_template_custom_big.xml"
+    },
+    {
+        "merged": "C:\\Users\\Nikita\\Desktop\\Samsung\\GitHub\\ElKornalJava\\ElJornal\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_text_select_handle_right_mtrl_light.png.flat",
+        "source": "C:\\Users\\Nikita\\.gradle\\caches\\transforms-2\\files-2.1\\dfb17c32c9e1bced7bb89f3e844a7607\\appcompat-1.0.2\\res\\drawable-xhdpi-v4\\abc_text_select_handle_right_mtrl_light.png"
     },
     {
         "merged": "C:\\Users\\Nikita\\Desktop\\Samsung\\GitHub\\ElKornalJava\\ElJornal\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_list_selector_disabled_holo_dark.9.png.flat",
@@ -788,6 +812,10 @@
         "source": "C:\\Users\\Nikita\\Desktop\\Samsung\\GitHub\\ElKornalJava\\ElJornal\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.png"
     },
     {
+        "merged": "C:\\Users\\Nikita\\Desktop\\Samsung\\GitHub\\ElKornalJava\\ElJornal\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_rasp_pupil.xml.flat",
+        "source": "C:\\Users\\Nikita\\Desktop\\Samsung\\GitHub\\ElKornalJava\\ElJornal\\app\\src\\main\\res\\layout\\activity_rasp_pupil.xml"
+    },
+    {
         "merged": "C:\\Users\\Nikita\\Desktop\\Samsung\\GitHub\\ElKornalJava\\ElJornal\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_btn_switch_to_on_mtrl_00001.9.png.flat",
         "source": "C:\\Users\\Nikita\\.gradle\\caches\\transforms-2\\files-2.1\\dfb17c32c9e1bced7bb89f3e844a7607\\appcompat-1.0.2\\res\\drawable-xxxhdpi-v4\\abc_btn_switch_to_on_mtrl_00001.9.png"
     },
@@ -830,6 +858,10 @@
     {
         "merged": "C:\\Users\\Nikita\\Desktop\\Samsung\\GitHub\\ElKornalJava\\ElJornal\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_list_longpressed_holo.9.png.flat",
         "source": "C:\\Users\\Nikita\\.gradle\\caches\\transforms-2\\files-2.1\\dfb17c32c9e1bced7bb89f3e844a7607\\appcompat-1.0.2\\res\\drawable-xxhdpi-v4\\abc_list_longpressed_holo.9.png"
+    },
+    {
+        "merged": "C:\\Users\\Nikita\\Desktop\\Samsung\\GitHub\\ElKornalJava\\ElJornal\\app\\build\\intermediates\\res\\merged\\debug\\drawable_fortextview.xml.flat",
+        "source": "C:\\Users\\Nikita\\Desktop\\Samsung\\GitHub\\ElKornalJava\\ElJornal\\app\\src\\main\\res\\drawable\\fortextview.xml"
     },
     {
         "merged": "C:\\Users\\Nikita\\Desktop\\Samsung\\GitHub\\ElKornalJava\\ElJornal\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_notification_bg_low_pressed.9.png.flat",
@@ -922,6 +954,10 @@
     {
         "merged": "C:\\Users\\Nikita\\Desktop\\Samsung\\GitHub\\ElKornalJava\\ElJornal\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_scrubber_control_to_pressed_mtrl_005.png.flat",
         "source": "C:\\Users\\Nikita\\.gradle\\caches\\transforms-2\\files-2.1\\dfb17c32c9e1bced7bb89f3e844a7607\\appcompat-1.0.2\\res\\drawable-xxxhdpi-v4\\abc_scrubber_control_to_pressed_mtrl_005.png"
+    },
+    {
+        "merged": "C:\\Users\\Nikita\\Desktop\\Samsung\\GitHub\\ElKornalJava\\ElJornal\\app\\build\\intermediates\\res\\merged\\debug\\drawable_alert_dialog.xml.flat",
+        "source": "C:\\Users\\Nikita\\Desktop\\Samsung\\GitHub\\ElKornalJava\\ElJornal\\app\\src\\main\\res\\drawable\\alert_dialog.xml"
     },
     {
         "merged": "C:\\Users\\Nikita\\Desktop\\Samsung\\GitHub\\ElKornalJava\\ElJornal\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_tab_indicator_material.xml.flat",
@@ -1096,6 +1132,10 @@
         "source": "C:\\Users\\Nikita\\.gradle\\caches\\transforms-2\\files-2.1\\dfb17c32c9e1bced7bb89f3e844a7607\\appcompat-1.0.2\\res\\drawable\\abc_btn_radio_material.xml"
     },
     {
+        "merged": "C:\\Users\\Nikita\\Desktop\\Samsung\\GitHub\\ElKornalJava\\ElJornal\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_director.xml.flat",
+        "source": "C:\\Users\\Nikita\\Desktop\\Samsung\\GitHub\\ElKornalJava\\ElJornal\\app\\src\\main\\res\\layout\\activity_director.xml"
+    },
+    {
         "merged": "C:\\Users\\Nikita\\Desktop\\Samsung\\GitHub\\ElKornalJava\\ElJornal\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_text_select_handle_left_mtrl_light.png.flat",
         "source": "C:\\Users\\Nikita\\.gradle\\caches\\transforms-2\\files-2.1\\dfb17c32c9e1bced7bb89f3e844a7607\\appcompat-1.0.2\\res\\drawable-mdpi-v4\\abc_text_select_handle_left_mtrl_light.png"
     },
@@ -1176,6 +1216,10 @@
         "source": "C:\\Users\\Nikita\\.gradle\\caches\\transforms-2\\files-2.1\\dfb17c32c9e1bced7bb89f3e844a7607\\appcompat-1.0.2\\res\\drawable-hdpi-v4\\abc_text_select_handle_left_mtrl_light.png"
     },
     {
+        "merged": "C:\\Users\\Nikita\\Desktop\\Samsung\\GitHub\\ElKornalJava\\ElJornal\\app\\build\\intermediates\\res\\merged\\debug\\drawable_botton_make_dz.xml.flat",
+        "source": "C:\\Users\\Nikita\\Desktop\\Samsung\\GitHub\\ElKornalJava\\ElJornal\\app\\src\\main\\res\\drawable\\botton_make_dz.xml"
+    },
+    {
         "merged": "C:\\Users\\Nikita\\Desktop\\Samsung\\GitHub\\ElKornalJava\\ElJornal\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_switch_thumb_material.xml.flat",
         "source": "C:\\Users\\Nikita\\.gradle\\caches\\transforms-2\\files-2.1\\dfb17c32c9e1bced7bb89f3e844a7607\\appcompat-1.0.2\\res\\drawable\\abc_switch_thumb_material.xml"
     },
@@ -1212,6 +1256,10 @@
         "source": "C:\\Users\\Nikita\\.gradle\\caches\\transforms-2\\files-2.1\\dfb17c32c9e1bced7bb89f3e844a7607\\appcompat-1.0.2\\res\\drawable-hdpi-v4\\abc_btn_switch_to_on_mtrl_00012.9.png"
     },
     {
+        "merged": "C:\\Users\\Nikita\\Desktop\\Samsung\\GitHub\\ElKornalJava\\ElJornal\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_registration.xml.flat",
+        "source": "C:\\Users\\Nikita\\Desktop\\Samsung\\GitHub\\ElKornalJava\\ElJornal\\app\\src\\main\\res\\layout\\activity_registration.xml"
+    },
+    {
         "merged": "C:\\Users\\Nikita\\Desktop\\Samsung\\GitHub\\ElKornalJava\\ElJornal\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_btn_switch_to_on_mtrl_00001.9.png.flat",
         "source": "C:\\Users\\Nikita\\.gradle\\caches\\transforms-2\\files-2.1\\dfb17c32c9e1bced7bb89f3e844a7607\\appcompat-1.0.2\\res\\drawable-mdpi-v4\\abc_btn_switch_to_on_mtrl_00001.9.png"
     },
@@ -1234,6 +1282,10 @@
     {
         "merged": "C:\\Users\\Nikita\\Desktop\\Samsung\\GitHub\\ElKornalJava\\ElJornal\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_textfield_search_default_mtrl_alpha.9.png.flat",
         "source": "C:\\Users\\Nikita\\.gradle\\caches\\transforms-2\\files-2.1\\dfb17c32c9e1bced7bb89f3e844a7607\\appcompat-1.0.2\\res\\drawable-hdpi-v4\\abc_textfield_search_default_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "C:\\Users\\Nikita\\Desktop\\Samsung\\GitHub\\ElKornalJava\\ElJornal\\app\\build\\intermediates\\res\\merged\\debug\\drawable_fields2.xml.flat",
+        "source": "C:\\Users\\Nikita\\Desktop\\Samsung\\GitHub\\ElKornalJava\\ElJornal\\app\\src\\main\\res\\drawable\\fields2.xml"
     },
     {
         "merged": "C:\\Users\\Nikita\\Desktop\\Samsung\\GitHub\\ElKornalJava\\ElJornal\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_textfield_search_activated_mtrl_alpha.9.png.flat",
@@ -1340,6 +1392,10 @@
         "source": "C:\\Users\\Nikita\\Desktop\\Samsung\\GitHub\\ElKornalJava\\ElJornal\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_launcher_background.png"
     },
     {
+        "merged": "C:\\Users\\Nikita\\Desktop\\Samsung\\GitHub\\ElKornalJava\\ElJornal\\app\\build\\intermediates\\res\\merged\\debug\\drawable_botton_taped.xml.flat",
+        "source": "C:\\Users\\Nikita\\Desktop\\Samsung\\GitHub\\ElKornalJava\\ElJornal\\app\\src\\main\\res\\drawable\\botton_taped.xml"
+    },
+    {
         "merged": "C:\\Users\\Nikita\\Desktop\\Samsung\\GitHub\\ElKornalJava\\ElJornal\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_autorization.xml.flat",
         "source": "C:\\Users\\Nikita\\Desktop\\Samsung\\GitHub\\ElKornalJava\\ElJornal\\app\\src\\main\\res\\layout\\activity_autorization.xml"
     },
@@ -1358,6 +1414,10 @@
     {
         "merged": "C:\\Users\\Nikita\\Desktop\\Samsung\\GitHub\\ElKornalJava\\ElJornal\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_textfield_search_default_mtrl_alpha.9.png.flat",
         "source": "C:\\Users\\Nikita\\.gradle\\caches\\transforms-2\\files-2.1\\dfb17c32c9e1bced7bb89f3e844a7607\\appcompat-1.0.2\\res\\drawable-xxhdpi-v4\\abc_textfield_search_default_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "C:\\Users\\Nikita\\Desktop\\Samsung\\GitHub\\ElKornalJava\\ElJornal\\app\\build\\intermediates\\res\\merged\\debug\\drawable_botton.xml.flat",
+        "source": "C:\\Users\\Nikita\\Desktop\\Samsung\\GitHub\\ElKornalJava\\ElJornal\\app\\src\\main\\res\\drawable\\botton.xml"
     },
     {
         "merged": "C:\\Users\\Nikita\\Desktop\\Samsung\\GitHub\\ElKornalJava\\ElJornal\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_scrubber_control_to_pressed_mtrl_005.png.flat",
@@ -1430,6 +1490,10 @@
     {
         "merged": "C:\\Users\\Nikita\\Desktop\\Samsung\\GitHub\\ElKornalJava\\ElJornal\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_vector_test.xml.flat",
         "source": "C:\\Users\\Nikita\\.gradle\\caches\\transforms-2\\files-2.1\\dfb17c32c9e1bced7bb89f3e844a7607\\appcompat-1.0.2\\res\\drawable\\abc_vector_test.xml"
+    },
+    {
+        "merged": "C:\\Users\\Nikita\\Desktop\\Samsung\\GitHub\\ElKornalJava\\ElJornal\\app\\build\\intermediates\\res\\merged\\debug\\drawable_days.xml.flat",
+        "source": "C:\\Users\\Nikita\\Desktop\\Samsung\\GitHub\\ElKornalJava\\ElJornal\\app\\src\\main\\res\\drawable\\days.xml"
     },
     {
         "merged": "C:\\Users\\Nikita\\Desktop\\Samsung\\GitHub\\ElKornalJava\\ElJornal\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_item_background_holo_light.xml.flat",
@@ -1516,8 +1580,16 @@
         "source": "C:\\Users\\Nikita\\.gradle\\caches\\transforms-2\\files-2.1\\dfb17c32c9e1bced7bb89f3e844a7607\\appcompat-1.0.2\\res\\drawable-ldrtl-xxxhdpi-v17\\abc_ic_menu_cut_mtrl_alpha.png"
     },
     {
+        "merged": "C:\\Users\\Nikita\\Desktop\\Samsung\\GitHub\\ElKornalJava\\ElJornal\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_learner.xml.flat",
+        "source": "C:\\Users\\Nikita\\Desktop\\Samsung\\GitHub\\ElKornalJava\\ElJornal\\app\\src\\main\\res\\layout\\activity_learner.xml"
+    },
+    {
         "merged": "C:\\Users\\Nikita\\Desktop\\Samsung\\GitHub\\ElKornalJava\\ElJornal\\app\\build\\intermediates\\res\\merged\\debug\\anim_abc_popup_enter.xml.flat",
         "source": "C:\\Users\\Nikita\\.gradle\\caches\\transforms-2\\files-2.1\\dfb17c32c9e1bced7bb89f3e844a7607\\appcompat-1.0.2\\res\\anim\\abc_popup_enter.xml"
+    },
+    {
+        "merged": "C:\\Users\\Nikita\\Desktop\\Samsung\\GitHub\\ElKornalJava\\ElJornal\\app\\build\\intermediates\\res\\merged\\debug\\raw_video_autorization.mp4.flat",
+        "source": "C:\\Users\\Nikita\\Desktop\\Samsung\\GitHub\\ElKornalJava\\ElJornal\\app\\src\\main\\res\\raw\\video_autorization.mp4"
     },
     {
         "merged": "C:\\Users\\Nikita\\Desktop\\Samsung\\GitHub\\ElKornalJava\\ElJornal\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_notification_bg_normal_pressed.9.png.flat",
@@ -1558,6 +1630,10 @@
     {
         "merged": "C:\\Users\\Nikita\\Desktop\\Samsung\\GitHub\\ElKornalJava\\ElJornal\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_ic_star_half_black_16dp.png.flat",
         "source": "C:\\Users\\Nikita\\.gradle\\caches\\transforms-2\\files-2.1\\dfb17c32c9e1bced7bb89f3e844a7607\\appcompat-1.0.2\\res\\drawable-mdpi-v4\\abc_ic_star_half_black_16dp.png"
+    },
+    {
+        "merged": "C:\\Users\\Nikita\\Desktop\\Samsung\\GitHub\\ElKornalJava\\ElJornal\\app\\build\\intermediates\\res\\merged\\debug\\drawable_botton_aut.xml.flat",
+        "source": "C:\\Users\\Nikita\\Desktop\\Samsung\\GitHub\\ElKornalJava\\ElJornal\\app\\src\\main\\res\\drawable\\botton_aut.xml"
     },
     {
         "merged": "C:\\Users\\Nikita\\Desktop\\Samsung\\GitHub\\ElKornalJava\\ElJornal\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_cab_background_top_mtrl_alpha.9.png.flat",

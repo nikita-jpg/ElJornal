@@ -17,15 +17,23 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme" >
-        <activity android:name="com.example.myapplication.RegisterActivity" />
-        <activity android:name="com.example.myapplication.YourAccount" />
-        <activity android:name="com.example.myapplication.AutorizationActivity" >
+        android:testOnly="true"
+        android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" >
+        <activity
+            android:name="com.example.myapplication.Registration"
+            android:theme="@style/style_edit" />
+        <activity android:name="com.example.myapplication.Director" >
+        </activity>
+        <activity android:name="com.example.myapplication.Rasp" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity android:name="com.example.myapplication.Teacher" >
+        </activity>
+        <activity android:name="com.example.myapplication.AutorizationActivity" >
         </activity>
     </application>
 

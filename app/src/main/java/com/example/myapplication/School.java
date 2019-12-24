@@ -16,7 +16,6 @@ public class School {
     }
 
     public void putLearner(Learner learner) {
-        learners.put(learner.getId(),learner);
     }
 
     public HashMap<String, Elective> getElectives() {

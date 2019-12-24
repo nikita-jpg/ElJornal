@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/lay_registr_parent">
+
+    <LinearLayout
+        android:id="@+id/lay_registr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/reg_lay"
+        android:layout_margin="10dp">
+    <EditText
+        android:id="@+id/edit_registr_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="login"
+        android:theme="@style/style_edit"/>
+
+    <EditText
+        android:id="@+id/edit_registr_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Пароль"
+        android:theme="@style/style_edit"/>
+
+    <EditText
+        android:id="@+id/edit_registr_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Имя"
+        android:theme="@style/style_edit"/>
+
+    <EditText
+        android:id="@+id/edit_registr_surname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="фамилия"
+        android:theme="@style/style_edit"/>
+    </LinearLayout>
+    <Button
+        android:id="@+id/btn_reg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="@color/white"
+        android:text="Зарегистрировать"
+        android:background="@drawable/botton_aut"
+        android:layout_margin="10dp"
+        android:padding="4dp"/>
+
+</LinearLayout>

@@ -8,15 +8,19 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
-        <activity android:name=".RegisterActivity"></activity>
-        <activity android:name=".YourAccount"></activity>
-        <activity android:name=".AutorizationActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+        android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
+        <activity android:name=".Registration" android:theme="@style/style_edit"></activity>
+        <activity android:name=".Director">
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+        </activity>
+        <activity android:name=".Rasp">            <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter> </activity>
+        <activity android:name=".Teacher">
+        </activity>
+        <activity android:name=".AutorizationActivity">
+
         </activity>
     </application>
 
