@@ -10,55 +10,57 @@
 9        android:targetSdkVersion="29" />
 9-->C:\Users\Nikita\Desktop\Samsung\GitHub\ElKornalJava\ElJornal\app\src\main\AndroidManifest.xml
 10
-11    <application
-11-->C:\Users\Nikita\Desktop\Samsung\GitHub\ElKornalJava\ElJornal\app\src\main\AndroidManifest.xml:5:5-25:19
-12        android:allowBackup="true"
-12-->C:\Users\Nikita\Desktop\Samsung\GitHub\ElKornalJava\ElJornal\app\src\main\AndroidManifest.xml:6:9-35
-13        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-13-->[androidx.core:core:1.0.1] C:\Users\Nikita\.gradle\caches\transforms-2\files-2.1\46da25c3e2ae6308b2227b660caa604d\core-1.0.1\AndroidManifest.xml:22:18-86
-14        android:debuggable="true"
-15        android:icon="@mipmap/ic_launcher"
-15-->C:\Users\Nikita\Desktop\Samsung\GitHub\ElKornalJava\ElJornal\app\src\main\AndroidManifest.xml:7:9-43
-16        android:label="@string/app_name"
-16-->C:\Users\Nikita\Desktop\Samsung\GitHub\ElKornalJava\ElJornal\app\src\main\AndroidManifest.xml:8:9-41
-17        android:roundIcon="@mipmap/ic_launcher_round"
-17-->C:\Users\Nikita\Desktop\Samsung\GitHub\ElKornalJava\ElJornal\app\src\main\AndroidManifest.xml:9:9-54
-18        android:supportsRtl="true"
-18-->C:\Users\Nikita\Desktop\Samsung\GitHub\ElKornalJava\ElJornal\app\src\main\AndroidManifest.xml:10:9-35
-19        android:testOnly="true"
-20        android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" >
-20-->C:\Users\Nikita\Desktop\Samsung\GitHub\ElKornalJava\ElJornal\app\src\main\AndroidManifest.xml:11:9-68
-21        <activity
-21-->C:\Users\Nikita\Desktop\Samsung\GitHub\ElKornalJava\ElJornal\app\src\main\AndroidManifest.xml:12:9-93
-22            android:name="com.example.myapplication.Registration"
-22-->C:\Users\Nikita\Desktop\Samsung\GitHub\ElKornalJava\ElJornal\app\src\main\AndroidManifest.xml:12:19-47
-23            android:theme="@style/style_edit" />
-23-->C:\Users\Nikita\Desktop\Samsung\GitHub\ElKornalJava\ElJornal\app\src\main\AndroidManifest.xml:12:48-81
-24        <activity android:name="com.example.myapplication.Director" >
-24-->C:\Users\Nikita\Desktop\Samsung\GitHub\ElKornalJava\ElJornal\app\src\main\AndroidManifest.xml:13:9-15:20
-24-->C:\Users\Nikita\Desktop\Samsung\GitHub\ElKornalJava\ElJornal\app\src\main\AndroidManifest.xml:13:19-43
-25        </activity>
-26        <activity android:name="com.example.myapplication.Rasp" >
-26-->C:\Users\Nikita\Desktop\Samsung\GitHub\ElKornalJava\ElJornal\app\src\main\AndroidManifest.xml:16:9-19:37
-26-->C:\Users\Nikita\Desktop\Samsung\GitHub\ElKornalJava\ElJornal\app\src\main\AndroidManifest.xml:16:19-39
-27            <intent-filter>
-27-->C:\Users\Nikita\Desktop\Samsung\GitHub\ElKornalJava\ElJornal\app\src\main\AndroidManifest.xml:16:52-19:25
-28                <action android:name="android.intent.action.MAIN" />
-28-->C:\Users\Nikita\Desktop\Samsung\GitHub\ElKornalJava\ElJornal\app\src\main\AndroidManifest.xml:17:13-65
-28-->C:\Users\Nikita\Desktop\Samsung\GitHub\ElKornalJava\ElJornal\app\src\main\AndroidManifest.xml:17:21-62
-29
-30                <category android:name="android.intent.category.LAUNCHER" />
-30-->C:\Users\Nikita\Desktop\Samsung\GitHub\ElKornalJava\ElJornal\app\src\main\AndroidManifest.xml:18:13-73
-30-->C:\Users\Nikita\Desktop\Samsung\GitHub\ElKornalJava\ElJornal\app\src\main\AndroidManifest.xml:18:23-70
-31            </intent-filter>
-32        </activity>
-33        <activity android:name="com.example.myapplication.Teacher" >
-33-->C:\Users\Nikita\Desktop\Samsung\GitHub\ElKornalJava\ElJornal\app\src\main\AndroidManifest.xml:20:9-21:20
-33-->C:\Users\Nikita\Desktop\Samsung\GitHub\ElKornalJava\ElJornal\app\src\main\AndroidManifest.xml:20:19-42
-34        </activity>
-35        <activity android:name="com.example.myapplication.AutorizationActivity" >
-35-->C:\Users\Nikita\Desktop\Samsung\GitHub\ElKornalJava\ElJornal\app\src\main\AndroidManifest.xml:22:9-24:20
-35-->C:\Users\Nikita\Desktop\Samsung\GitHub\ElKornalJava\ElJornal\app\src\main\AndroidManifest.xml:22:19-55
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->C:\Users\Nikita\Desktop\Samsung\GitHub\ElKornalJava\ElJornal\app\src\main\AndroidManifest.xml:4:5-67
+11-->C:\Users\Nikita\Desktop\Samsung\GitHub\ElKornalJava\ElJornal\app\src\main\AndroidManifest.xml:4:22-64
+12
+13    <application
+13-->C:\Users\Nikita\Desktop\Samsung\GitHub\ElKornalJava\ElJornal\app\src\main\AndroidManifest.xml:5:5-23:19
+14        android:allowBackup="true"
+14-->C:\Users\Nikita\Desktop\Samsung\GitHub\ElKornalJava\ElJornal\app\src\main\AndroidManifest.xml:6:9-35
+15        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+15-->[androidx.core:core:1.0.1] C:\Users\Nikita\.gradle\caches\transforms-2\files-2.1\46da25c3e2ae6308b2227b660caa604d\core-1.0.1\AndroidManifest.xml:22:18-86
+16        android:debuggable="true"
+17        android:icon="@mipmap/ic_launcher"
+17-->C:\Users\Nikita\Desktop\Samsung\GitHub\ElKornalJava\ElJornal\app\src\main\AndroidManifest.xml:7:9-43
+18        android:label="@string/app_name"
+18-->C:\Users\Nikita\Desktop\Samsung\GitHub\ElKornalJava\ElJornal\app\src\main\AndroidManifest.xml:8:9-41
+19        android:roundIcon="@mipmap/ic_launcher_round"
+19-->C:\Users\Nikita\Desktop\Samsung\GitHub\ElKornalJava\ElJornal\app\src\main\AndroidManifest.xml:9:9-54
+20        android:supportsRtl="true"
+20-->C:\Users\Nikita\Desktop\Samsung\GitHub\ElKornalJava\ElJornal\app\src\main\AndroidManifest.xml:10:9-35
+21        android:testOnly="true"
+22        android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" >
+22-->C:\Users\Nikita\Desktop\Samsung\GitHub\ElKornalJava\ElJornal\app\src\main\AndroidManifest.xml:11:9-68
+23        <activity
+23-->C:\Users\Nikita\Desktop\Samsung\GitHub\ElKornalJava\ElJornal\app\src\main\AndroidManifest.xml:12:9-93
+24            android:name="com.example.myapplication.Registration"
+24-->C:\Users\Nikita\Desktop\Samsung\GitHub\ElKornalJava\ElJornal\app\src\main\AndroidManifest.xml:12:19-47
+25            android:theme="@style/style_edit" />
+25-->C:\Users\Nikita\Desktop\Samsung\GitHub\ElKornalJava\ElJornal\app\src\main\AndroidManifest.xml:12:48-81
+26        <activity android:name="com.example.myapplication.Director" >
+26-->C:\Users\Nikita\Desktop\Samsung\GitHub\ElKornalJava\ElJornal\app\src\main\AndroidManifest.xml:13:9-14:20
+26-->C:\Users\Nikita\Desktop\Samsung\GitHub\ElKornalJava\ElJornal\app\src\main\AndroidManifest.xml:13:19-43
+27        </activity>
+28        <activity android:name="com.example.myapplication.Rasp" />
+28-->C:\Users\Nikita\Desktop\Samsung\GitHub\ElKornalJava\ElJornal\app\src\main\AndroidManifest.xml:15:9-51
+28-->C:\Users\Nikita\Desktop\Samsung\GitHub\ElKornalJava\ElJornal\app\src\main\AndroidManifest.xml:15:19-39
+29        <activity android:name="com.example.myapplication.Teacher" />
+29-->C:\Users\Nikita\Desktop\Samsung\GitHub\ElKornalJava\ElJornal\app\src\main\AndroidManifest.xml:16:9-54
+29-->C:\Users\Nikita\Desktop\Samsung\GitHub\ElKornalJava\ElJornal\app\src\main\AndroidManifest.xml:16:19-42
+30        <activity android:name="com.example.myapplication.AutorizationActivity" >
+30-->C:\Users\Nikita\Desktop\Samsung\GitHub\ElKornalJava\ElJornal\app\src\main\AndroidManifest.xml:17:9-22:20
+30-->C:\Users\Nikita\Desktop\Samsung\GitHub\ElKornalJava\ElJornal\app\src\main\AndroidManifest.xml:17:19-55
+31            <intent-filter>
+31-->C:\Users\Nikita\Desktop\Samsung\GitHub\ElKornalJava\ElJornal\app\src\main\AndroidManifest.xml:18:13-21:29
+32                <action android:name="android.intent.action.MAIN" />
+32-->C:\Users\Nikita\Desktop\Samsung\GitHub\ElKornalJava\ElJornal\app\src\main\AndroidManifest.xml:19:17-69
+32-->C:\Users\Nikita\Desktop\Samsung\GitHub\ElKornalJava\ElJornal\app\src\main\AndroidManifest.xml:19:25-66
+33
+34                <category android:name="android.intent.category.LAUNCHER" />
+34-->C:\Users\Nikita\Desktop\Samsung\GitHub\ElKornalJava\ElJornal\app\src\main\AndroidManifest.xml:20:17-77
+34-->C:\Users\Nikita\Desktop\Samsung\GitHub\ElKornalJava\ElJornal\app\src\main\AndroidManifest.xml:20:27-74
+35            </intent-filter>
 36        </activity>
 37    </application>
 38

@@ -3,6 +3,7 @@ package com.example.myapplication;
 import org.json.JSONObject;
 
 import java.util.HashMap;
+import java.util.List;
 
 import retrofit2.Call;
 import retrofit2.http.GET;
@@ -11,14 +12,12 @@ import retrofit2.http.POST;
 public interface Server {
 
     //Авторизация учителя
-    @GET("getTeacher")//Возвращает объект класса Teacher
-    Call<JSONObject> checkTeacherFromServer(String login,String password);
+    @GET("messages1.json")//Возвращает объект класса Teacher
+    Call<JSONObject> checkTeacherFromServer();
 
     //Регистрация учителя
     @POST("setTeacher")//Возвращает объект класса Teacher
     Call<JSONObject> registerTeacherToServer(String login,String password,String name,String surname,String position,String email,String phone,String qualification);
-
-
 
 
     //Авторизация ученика

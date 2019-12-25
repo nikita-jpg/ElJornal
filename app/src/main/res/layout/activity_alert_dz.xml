@@ -26,14 +26,15 @@
         android:textSize="20dp"/>
 
     <TextView
-        android:id="@+id/ponPervDzText"
+        android:id="@+id/text_dz_alert"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:ems="12"
         android:gravity="center"
+        android:text="jdbvuiewhciuschewio"
         android:hint="Ваше дз"
         android:textColorHint="@color/bkackText"
         android:layout_marginBottom="17dp"
+        android:padding="4dp"
          />
 
     </LinearLayout>

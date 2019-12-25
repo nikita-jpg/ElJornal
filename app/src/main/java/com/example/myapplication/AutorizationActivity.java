@@ -2,10 +2,13 @@ package com.example.myapplication;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.media.MediaPlayer;
 import android.net.Uri;
 import android.os.Bundle;
+import android.os.Parcelable;
+import android.os.StrictMode;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -13,10 +16,14 @@ import android.widget.Toast;
 import android.widget.VideoView;
 
 import com.google.gson.Gson;
+import com.google.gson.JsonElement;
 
 import org.intellij.lang.annotations.Language;
 import org.json.JSONException;
 import org.json.JSONObject;
+
+import java.io.IOException;
+import java.util.List;
 
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -24,7 +31,7 @@ import retrofit2.Response;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
-public class AutorizationActivity extends AppCompatActivity implements View.OnClickListener {
+public class AutorizationActivity extends Activity implements View.OnClickListener {
 
     Button aut;
     EditText name;
@@ -35,26 +42,26 @@ public class AutorizationActivity extends AppCompatActivity implements View.OnCl
 
     Retrofit retrofit;
     Server server;
-    Call<JSONObject> autGet;
+    Call<JSONObject> jsonObjectCall;
     JSONObject jsonObject;
     Toast backToast;
-    @Language("JSON")
-    String a;
-
     Intent intent;
+
+    String a;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_autorization);
 
-        //Тест
+        StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
+        StrictMode.setThreadPolicy(policy);
+
 
         a ="{\"id\":12,\"position\":\"Teacher\",\"login\":\"12\",\"password\":\"12\",\"name\":\"12\",\"surname\":\"12\",\"email\":\"12\",\"phone\":\"12\",\"qualification\":\"12\",\"is_admin\":true,\"permit\":12}";
-        //Тест
 
 
-
+        //Видео на фоне
         VideoView videoPlayer;
         videoPlayer =  findViewById(R.id.video_autorization_view);
         Uri myVideoUri= Uri.parse( "android.resource://" + getPackageName() + "/" + R.raw.video_autorization);
@@ -84,31 +91,37 @@ public class AutorizationActivity extends AppCompatActivity implements View.OnCl
 
 
         retrofit = new Retrofit.Builder()
-                .baseUrl("https://trinixy.ru/")
+                .baseUrl("https://rawgit.com/startandroid/data/master/messages/")
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
 
         server = retrofit.create(Server.class);
     }
 
-    public void getJsonObject(){
-        autGet.enqueue(new Callback<JSONObject>() {
-            @Override
-            public void onResponse(Call<JSONObject> call, Response<JSONObject> response) {
-                jsonObject = response.body();
-            }
-
-            @Override
-            public void onFailure(Call<JSONObject> call, Throwable t) {
-
-            }
-        });
+    public int checkJson() throws JSONException {
+        //return jsonObject.getInt("resultCode");
+        return 0;
     }
 
-    public void startTeacher(){
-        Gson gson = new Gson();
-        Teacher teacher = gson.fromJson(a,Teacher.class);
-        intent = new Intent(this,Teacher.class);
+
+    public void getJsonObject() throws IOException, JSONException {
+        jsonObject=new JSONObject(a);
+        //Response<JSONObject> jsonObject = jsonObjectCall.execute();
+    }
+
+    public Teacher startTeacher() throws JSONException {
+        int id = jsonObject.getInt("id");
+        String name = jsonObject.getString("name");
+        String surname= jsonObject.getString("surname");
+        String email= jsonObject.getString("email");
+        String phone= jsonObject.getString("phone");
+        String qualification= jsonObject.getString("qualification");
+        Boolean is_admin= jsonObject.getBoolean("is_admin");
+        Integer permit= jsonObject.getInt("permit");
+
+        Teacher teacher = new Teacher(id,name,surname,email,phone,qualification,is_admin,permit);
+
+        return teacher;
     }
 
     @Override
@@ -136,20 +149,37 @@ public class AutorizationActivity extends AppCompatActivity implements View.OnCl
                 if (name.length()>=1 && password.length()>=1 && tekStatus!="") {
                     switch (tekStatus) {
                         case "teacher":
-                            /*autGet = server.checkTeacherFromServer(name.getText().toString(),password.getText().toString());
-                            getJsonObject();*/
-                            /*if (jsonObject.getInt("resultCode") == 1) {
-                                backToast = Toast.makeText(getBaseContext(), "Вы ошиблись", Toast.LENGTH_SHORT);
-                                backToast.show();
+                            //Работаем с учителем
+                            jsonObjectCall = server.checkTeacherFromServer();
+                            try {
+                                getJsonObject();
+                            } catch (IOException e) {
+                                e.printStackTrace();
+                            } catch (JSONException e) {
+                                e.printStackTrace();
                             }
-                            else {*/
-                            startTeacher();
-                            startActivity(intent);
-                            //Запускаем учителя
+                            try {
+                                if(checkJson() == 0){
+                                    Gson gson = new Gson();
+                                    Teacher teacher = startTeacher();
+                                    intent = new Intent(this,Teacher.class);
+                                    intent.putExtra("teacher", (Parcelable) teacher);
+                                    startActivity(intent);
+                                }
+                            } catch (JSONException e) {
+                                e.printStackTrace();
+                            }
+                            //Закончили работать с учителем
                             break;
                         case "learner":
-                            autGet = server.checkLearnerFromServer(name.getText().toString(),password.getText().toString());
-                            getJsonObject();
+                            //autGet = server.checkLearnerFromServer(name.getText().toString(),password.getText().toString());
+                            try {
+                                getJsonObject();
+                            } catch (IOException e) {
+                                e.printStackTrace();
+                            } catch (JSONException e) {
+                                e.printStackTrace();
+                            }
                             try {
                                 if (jsonObject.getInt("resultCode") == 1) {
                                     backToast = Toast.makeText(getBaseContext(), "Вы ошиблись", Toast.LENGTH_SHORT);

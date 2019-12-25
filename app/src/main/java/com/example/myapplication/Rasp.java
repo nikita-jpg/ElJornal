@@ -3,10 +3,14 @@ package com.example.myapplication;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.AlertDialog;
+import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
+import android.text.method.ScrollingMovementMethod;
+import android.view.ContextThemeWrapper;
+import android.view.Gravity;
 import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.TableLayout;
@@ -19,6 +23,7 @@ public class Rasp extends AppCompatActivity implements View.OnClickListener {
 
     AlertDialog.Builder bilder;
     AlertDialog al;
+    View view;
 
     public TextView[] textViews;
     public static String Dz, DzMath, DzRus, DzGeo, DzBio, DzFiz, DzHim, DzInf;
@@ -64,14 +69,14 @@ public class Rasp extends AppCompatActivity implements View.OnClickListener {
         Intent intent=getIntent();
         //Получаем объект.Если он равен "Learner",то первый метод,наче второй
         RaspForLearner((TableLayout) findViewById(R.id.tab_monday),"Понедельник");
-        RaspForLearner((TableLayout) findViewById(R.id.tab_tuesday),"Понедельник");
-        RaspForLearner((TableLayout) findViewById(R.id.tab_wensday),"Понедельник");
-        RaspForLearner((TableLayout) findViewById(R.id.tab_thursday),"Понедельник");
-        RaspForLearner((TableLayout) findViewById(R.id.tab_friday),"Понедельник");
+        RaspForLearner((TableLayout) findViewById(R.id.tab_tuesday),"Вторник");
+        RaspForLearner((TableLayout) findViewById(R.id.tab_wensday),"Среда");
+        RaspForLearner((TableLayout) findViewById(R.id.tab_thursday),"Четверг");
+        RaspForLearner((TableLayout) findViewById(R.id.tab_friday),"Пятница");
 
 
         bilder = new AlertDialog.Builder(this);
-        View view = getLayoutInflater().inflate(R.layout.activity_alert_dz, null,true);
+        view = getLayoutInflater().inflate(R.layout.activity_alert_dz, null,true);
         bilder.setView(view);
         al = bilder.create();
         al.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
@@ -85,16 +90,18 @@ public class Rasp extends AppCompatActivity implements View.OnClickListener {
         TextView textDay= new TextView(this);
         textDay.setTextColor(Color.parseColor("#000002"));
         textDay.setText(day);
-        tableRowDay.addView(textDay,l);
+        tableRowDay.addView(textDay,layoutParamsBtn);
+        layoutRoot.addView(tableRowDay,layoutParams);
         while(i<j){
             TableRow tableRow = new TableRow(this);
             textViews[i] = new TextView(this);
             textViews[i].setText("1.Математика");
             textViews[i].setTextColor(Color.parseColor("#000002"));
-            TextView button=new TextView(this);
-            button.setBackgroundResource(R.drawable.botton_for_learner_reg);
-            button.setClickable(true);
+            final Context contextTextViewDz = new ContextThemeWrapper(this, R.style.style_dz_textview);
+            TextView button=new TextView(contextTextViewDz);
             button.setOnClickListener(this);
+            button.setText("Домашняя работа GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG");
+            button.setId(i);
             TextView textView=new TextView(this);
             textView.setTextColor(Color.parseColor("#000002"));
             textView.setText("Оценки");
@@ -169,6 +176,10 @@ public class Rasp extends AppCompatActivity implements View.OnClickListener {
 
     @Override
     public void onClick(View v) {
+        TextView textView = view.findViewById(R.id.text_dz_alert);
+        textView.setTextColor(Color.parseColor("#000002"));
+        String a =((TextView)findViewById(v.getId())).getText().toString();
+        textView.setText(a);
         al.show();
     }
 }

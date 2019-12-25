@@ -17,16 +17,28 @@
     </style>
     <style name="style_btn_make_dz" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
-        <item name="android:height">19dp</item>
         <item name="android:background">@drawable/botton_make_dz</item>
         <item name="android:gravity">center</item>
     </style>
 
     <style name="AlerDialogDz">
+    <!-- Customize your theme here. -->
+    <item name="android:height">150dp</item>
+    <item name="android:background">@drawable/alert_dialog</item>
+    <item name="android:gravity">center</item>
+    </style>
+    <style name="style_dz_textview">
         <!-- Customize your theme here. -->
-        <item name="android:height">150dp</item>
-        <item name="android:background">@drawable/alert_dialog</item>
-        <item name="android:gravity">center</item>
+        <item name="android:paddingTop">3dp</item>
+        <item name="android:paddingLeft">7dp</item>
+        <item name="android:paddingRight">3dp</item>
+        <item name="android:paddingBottom">3dp</item>
+        <item name="android:background">@drawable/botton_for_learner_reg</item>
+        <item name="android:clickable">true</item>
+        <item name="android:textColor">@color/bkackText</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">left</item>
+        <item name="android:maxLines">1</item>
     </style>
 
 

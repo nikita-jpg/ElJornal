@@ -759,13 +759,8 @@ id image
 id info
 id invisible
 id italic
-id lay_friday
-id lay_monday
 id lay_registr
 id lay_registr_parent
-id lay_thursday
-id lay_tuesday
-id lay_wensday
 id left
 id line1
 id line3
@@ -786,7 +781,6 @@ id packed
 id parent
 id parentPanel
 id percent
-id ponPervDzText
 id progress_circular
 id progress_horizontal
 id radio
@@ -826,6 +820,11 @@ id start
 id submenuarrow
 id submit_area
 id tabMode
+id tab_friday
+id tab_monday
+id tab_thursday
+id tab_tuesday
+id tab_wensday
 id tag_transition_group
 id tag_unhandled_key_event_manager
 id tag_unhandled_key_listeners
@@ -837,6 +836,7 @@ id textView
 id textView2
 id textView3
 id textView4
+id text_dz_alert
 id thu
 id thursday
 id time
@@ -1306,6 +1306,7 @@ style Widget_Compat_NotificationActionContainer
 style Widget_Compat_NotificationActionText
 style Widget_Support_CoordinatorLayout
 style style_btn_make_dz
+style style_dz_textview
 style style_edit
 styleable ActionBar background backgroundSplit backgroundStacked contentInsetEnd contentInsetEndWithActions contentInsetLeft contentInsetRight contentInsetStart contentInsetStartWithNavigation customNavigationLayout displayOptions divider elevation height hideOnContentScroll homeAsUpIndicator homeLayout icon indeterminateProgressStyle itemPadding logo navigationMode popupTheme progressBarPadding progressBarStyle subtitle subtitleTextStyle title titleTextStyle
 styleable ActionBarLayout android_layout_gravity
