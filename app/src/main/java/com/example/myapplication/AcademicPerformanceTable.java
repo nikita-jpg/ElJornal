@@ -11,7 +11,6 @@ public class AcademicPerformanceTable extends Activity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.academic_performance_activity);
-
         Intent intent = getIntent();
         String array[] = intent.getStringArrayExtra("AcademicTable");
     }

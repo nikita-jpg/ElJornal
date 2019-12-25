@@ -99,7 +99,7 @@ public class Registration extends Activity implements View.OnClickListener {
         }
     }
     public void getJsonObject(){
-        gsonReg.enqueue(new Callback<JSONObject>() {
+        /*gsonReg.enqueue(new Callback<JSONObject>() {
             @Override
             public void onResponse(Call<JSONObject> call, Response<JSONObject> response) {
                 jsonObject = response.body();
@@ -110,6 +110,7 @@ public class Registration extends Activity implements View.OnClickListener {
 
             }
         });
+         */
     }
 
     @Override

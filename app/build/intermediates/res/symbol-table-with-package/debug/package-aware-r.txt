@@ -702,13 +702,13 @@ id bottom
 id btn_academic_performance
 id btn_aut
 id btn_aut_learner
-id btn_aut_parent
 id btn_aut_teacher
 id btn_make_dz
 id btn_make_parent
 id btn_make_pupil
 id btn_make_teacher
 id btn_rasp_learner
+id btn_rasp_teacher
 id btn_reg
 id button4
 id buttonPanel
@@ -763,6 +763,7 @@ id lay_registr_parent
 id left
 id line1
 id line3
+id linearLayout
 id listMode
 id list_item
 id message
@@ -814,6 +815,7 @@ id src_in
 id src_over
 id standard
 id start
+id subjects
 id submenuarrow
 id submit_area
 id tabMode

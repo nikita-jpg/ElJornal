@@ -52,17 +52,6 @@
             android:orientation="horizontal">
 
             <Button
-                android:id="@+id/btn_aut_parent"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="2dp"
-                android:layout_weight="1"
-                android:background="@drawable/botton"
-                android:gravity="center"
-                android:text="Родитель"
-                android:textColor="@color/bkackText" />
-
-            <Button
                 android:id="@+id/btn_aut_learner"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

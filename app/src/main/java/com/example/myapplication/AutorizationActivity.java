@@ -37,7 +37,7 @@ public class AutorizationActivity extends Activity implements View.OnClickListen
     EditText name;
     EditText password;
     Button btnTaped;
-    Button btnTeacher,btnParent,btnLearner;
+    Button btnTeacher,btnLearner;
     String tekStatus;
 
     Retrofit retrofit;
@@ -83,10 +83,8 @@ public class AutorizationActivity extends Activity implements View.OnClickListen
         btnTaped=findViewById(R.id.btn_aut_learner);
 
         btnLearner=findViewById(R.id.btn_aut_learner);
-        btnParent=findViewById(R.id.btn_aut_parent);
         btnTeacher=findViewById(R.id.btn_aut_teacher);
         btnLearner.setOnClickListener(this);
-        btnParent.setOnClickListener(this);
         btnTeacher.setOnClickListener(this);
 
 
@@ -133,16 +131,6 @@ public class AutorizationActivity extends Activity implements View.OnClickListen
 
         return learner;
     }
-    public Parent startParent() throws JSONException {
-        int id = jsonObject.getInt("id");
-        String name = jsonObject.getString("name");
-        String surname= jsonObject.getString("surname");
-        int child_id = jsonObject.getInt("child_id");
-
-        Parent parent = new Parent(id,name,surname,child_id);
-
-        return parent;
-    }
 
     @Override
     public void onClick(View v) {
@@ -158,12 +146,6 @@ public class AutorizationActivity extends Activity implements View.OnClickListen
                 btnTaped=(Button)findViewById(R.id.btn_aut_teacher);
                 btnTaped.setBackgroundResource(R.drawable.botton_taped);
                 tekStatus="teacher";
-                break;
-            case R.id.btn_aut_parent:
-                btnTaped.setBackgroundResource(R.drawable.botton);
-                btnTaped=(Button)findViewById(R.id.btn_aut_parent);
-                btnTaped.setBackgroundResource(R.drawable.botton_taped);
-                tekStatus="parent";
                 break;
             case R.id.btn_aut:
                 if (name.length()>=1 && password.length()>=1 && tekStatus!="") {
@@ -207,28 +189,6 @@ public class AutorizationActivity extends Activity implements View.OnClickListen
                                     Learner learner = startLearner();
                                     intent = new Intent(this,Learner.class);
                                     intent.putExtra("learner", (Parcelable) learner);
-                                    intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
-                                    startActivity(intent);
-                                }
-                            } catch (JSONException e) {
-                                e.printStackTrace();
-                            }
-                            break;
-                        case "parent":
-                            jsonObjectCall = server.checkParentFromServer();
-                            try {
-                                getJsonObject();
-                            } catch (IOException e) {
-                                e.printStackTrace();
-                            } catch (JSONException e) {
-                                e.printStackTrace();
-                            }
-                            try {
-                                if(checkJson() == 0){
-                                    Gson gson = new Gson();
-                                    Parent parent = startParent();
-                                    intent = new Intent(this,Parent.class);
-                                    intent.putExtra("parent", (Parcelable) parent);
                                     intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
                                     startActivity(intent);
                                 }

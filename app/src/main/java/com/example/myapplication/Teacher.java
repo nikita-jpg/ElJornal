@@ -1,6 +1,7 @@
 package com.example.myapplication;
 
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
@@ -31,9 +32,19 @@ public class Teacher extends Activity implements View.OnClickListener, Parcelabl
     Integer permit;
 
 
+
+    Button btnTeacher;
+    Button btnPupil;
+    Button btnParent;
+    Button btnTaped;
+    Button btnRaspTech;
+
     String[] array;
     HashMap<Integer, Integer> hashMap=new HashMap<>();
     LinearLayout.LayoutParams layoutParams;
+    boolean IdLayRasp=false;
+    boolean IdLayMakeDz = false;
+    Context context = this;
 
     public Teacher(){}
 
@@ -96,15 +107,31 @@ public class Teacher extends Activity implements View.OnClickListener, Parcelabl
         hashMap.put(5,R.id.frid);
 
 
-        if(!is_admin) {//Ошибка
+        if(is_admin) {//Ошибка
             setContentView(R.layout.activity_teacher_admin);
+            adminUI();
         }
            else {
+               IdLayRasp=true;
                setContentView(R.layout.activity_teacher_rasp);
                RaspForTeacher();
         }
     }
 
+
+    public void adminUI(){
+        btnTeacher = findViewById(R.id.btn_make_teacher);
+        btnPupil = findViewById(R.id.btn_make_pupil);
+        btnParent = findViewById(R.id.btn_make_parent);
+        btnTaped = findViewById(R.id.btn_make_teacher);
+        btnRaspTech = findViewById(R.id.btn_rasp_teacher);
+
+        btnTeacher.setOnClickListener(this);
+        btnPupil.setOnClickListener(this);
+        btnParent.setOnClickListener(this);
+        btnRaspTech.setOnClickListener(this);
+
+    }
 
     public void RaspForTeacher(){
 
@@ -123,6 +150,7 @@ public class Teacher extends Activity implements View.OnClickListener, Parcelabl
                 btns[tekBtn] = new Button(this);
                 btns[tekBtn].setOnClickListener(this);
                 btns[tekBtn].setText(a[j]);
+                btns[tekBtn].setId(tekBtn);
                 btns[tekBtn].setTextColor(Color.parseColor("#000000"));
                 btns[tekBtn].setPadding(0,20,0,20);
                 btns[tekBtn].setGravity(Gravity.CENTER);
@@ -136,25 +164,75 @@ public class Teacher extends Activity implements View.OnClickListener, Parcelabl
     }
 
 
-
     @Override
     public void onClick(View v) {
-        if(v.getId() != R.id.btn_make_dz) {
-            setContentView(R.layout.activity_for_teacher_make_dz);
-            Button btnMakeDz = findViewById(R.id.btn_make_dz);
-            TextView textViewDz = findViewById(R.id.textViewDz);
-            textViewDz.setText((TextView)f);
-            btnMakeDz.setOnClickListener(this);
+        if(!is_admin || (is_admin && IdLayRasp==true)  ) {
+            if (v.getId() != R.id.btn_make_dz) {
+                String clas = ((Button) findViewById(v.getId())).getText().toString();
+                IdLayRasp=false;
+                IdLayMakeDz=true;
+                setContentView(R.layout.activity_for_teacher_make_dz);
+                Button btnMakeDz = findViewById(R.id.btn_make_dz);
+                TextView textViewDz = findViewById(R.id.textViewDz);
+                btnMakeDz.setOnClickListener(this);
+                textViewDz.setText(clas);
+            } else {
+                TextView textViewDz = findViewById(R.id.textViewDz);
+                EditText editDz = findViewById(R.id.edit_dz);
+                String a = editDz.getText().toString();
+                editDz.setText(a);
+            }
         }
         else {
-            TextView textViewDz = findViewById(R.id.textViewDz);
-            EditText editDz = findViewById(R.id.edit_dz);
-            String a= editDz.getText().toString();
-            editDz.setText(a);
+            Intent intent = new Intent(this, Registration.class);
+            switch (v.getId()){
+                case R.id.btn_make_pupil:
+                    btnTaped.setBackgroundResource(R.drawable.botton);
+                    btnTaped=findViewById(R.id.btn_make_pupil);
+                    btnTaped.setBackgroundResource(R.drawable.botton_taped);
+                    intent.putExtra("status","Pupil");
+                    startActivity(intent);
+                    break;
+                case R.id.btn_make_teacher:
+                    btnTaped.setBackgroundResource(R.drawable.botton);
+                    btnTaped=findViewById(R.id.btn_make_teacher);
+                    btnTaped.setBackgroundResource(R.drawable.botton_taped);
+                    intent.putExtra("status","Teacher");
+                    startActivity(intent);
+                    break;
+                case R.id.btn_make_parent:
+                    btnTaped.setBackgroundResource(R.drawable.botton);
+                    btnTaped=findViewById(R.id.btn_make_parent);
+                    btnTaped.setBackgroundResource(R.drawable.botton_taped);
+                    intent.putExtra("status","Parent");
+                    startActivity(intent);
+                    break;
+                case R.id.btn_rasp_teacher:
+                    IdLayMakeDz=false;
+                    IdLayRasp=true;
+                    setContentView(R.layout.activity_teacher_rasp);
+                    RaspForTeacher();
+                    break;
+
+            }
         }
     }
 
-
+    @Override
+    public void onBackPressed() {
+        if(IdLayMakeDz == true) {
+            IdLayMakeDz=false;
+            IdLayRasp=true;
+            setContentView(R.layout.activity_teacher_rasp);
+            RaspForTeacher();
+        }
+        else if( IdLayRasp == true && is_admin){
+            IdLayRasp=false;
+            IdLayMakeDz=false;
+            setContentView(R.layout.activity_teacher_admin);
+            adminUI();
+        }
+    }
     //Getters and Setters
     public int getId() {
         return id;
@@ -241,5 +319,7 @@ public class Teacher extends Activity implements View.OnClickListener, Parcelabl
             dest.writeInt(permit);
         }
     }
+
+
 
 }

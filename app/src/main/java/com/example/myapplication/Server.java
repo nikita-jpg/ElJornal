@@ -26,10 +26,6 @@ public interface Server {
     Call<JSONObject> registerPupilToServer(String login,String password,String name,String surname,String position,String clas);
 
 
-    //Авторизация родителя
-    @GET("aut/login")
-    Call<JSONObject> checkParentFromServer();
-
     //Регистрация родителя
     @POST("auth/register")//Возвращает объект класса Teacher
     Call<JSONObject> registerParentToServer(String login,String password,String name,String surname,String position,int child_id);
@@ -50,8 +46,6 @@ public interface Server {
     @GET("getTeacher")//Возвращает объект класса Teacher
     Call<Teacher> getTeacherFromServer(String login,String password);
 
-    @GET("getTEacherSchool")//Возвращает объект класса School,но только пол доступные школьнику
-    Call<School> getTeacherSchoolFromServer();
 
     @POST("setDz")//Ставим дз ученику
     void setDzToServer(int id,String predmet,String dz);

@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.os.Parcel;
 import android.os.Parcelable;
 import android.view.View;
+import android.widget.Button;
 import android.widget.VideoView;
 
 import androidx.annotation.Nullable;
@@ -25,6 +26,7 @@ public class Learner extends Activity implements View.OnClickListener, Parcelabl
     String clas;
     int permit;
 
+    Button academik,rasp;
 
     VideoView videoPlayer;
 
@@ -72,7 +74,7 @@ public class Learner extends Activity implements View.OnClickListener, Parcelabl
         setContentView(R.layout.activity_learner);
         //Intent intent =getIntent();
 
-        VideoView videoPlayer;
+
         videoPlayer =  findViewById(R.id.video_learner_meny);
         Uri myVideoUri= Uri.parse( "android.resource://" + getPackageName() + "/" + R.raw.video_learner_meny);
         videoPlayer.setVideoURI(myVideoUri);
@@ -84,6 +86,12 @@ public class Learner extends Activity implements View.OnClickListener, Parcelabl
             }
         });
 
+        rasp=findViewById(R.id.btn_rasp_learner);
+        rasp.setOnClickListener(this);
+        academik=findViewById(R.id.btn_academic_performance);
+        //academik.setOnClickListener(this);
+
+
     }
 
     @Override
@@ -93,8 +101,11 @@ public class Learner extends Activity implements View.OnClickListener, Parcelabl
                 Intent intent = new Intent(this, AcademicPerformanceTable.class);
                  //intent.putExtra("rasp",new Learner(id,position,login,password,name,surname,clas,permit));
                 startActivity(intent);
+                break;
             case R.id.btn_rasp_learner:
-
+                Intent intent1 = new Intent(this,Rasp.class);
+                startActivity(intent1);
+                break;
         }
     }
 
@@ -114,13 +125,9 @@ public class Learner extends Activity implements View.OnClickListener, Parcelabl
         dest.writeString(clas);
         dest.writeInt(permit);
     }
-    public String getPosition(){
-        return position;
-    }
-    @Override
+
     public void onResume() {
         super.onResume();
-        videoPlayer.start( );
+        videoPlayer.start();
     }
-
 }
