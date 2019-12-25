@@ -666,9 +666,7 @@ drawable tooltip_frame_light
 id ALT
 id ActAutorizationNameTxt
 id ActAutorizationPasswordTxt
-id Btn
 id CTRL
-id Dz
 id FUNCTION
 id META
 id SHIFT
@@ -706,12 +704,12 @@ id btn_aut
 id btn_aut_learner
 id btn_aut_parent
 id btn_aut_teacher
+id btn_make_dz
 id btn_make_parent
 id btn_make_pupil
 id btn_make_teacher
 id btn_rasp_learner
 id btn_reg
-id button2
 id button4
 id buttonPanel
 id center
@@ -733,6 +731,7 @@ id dialog_titile
 id dimensions
 id direct
 id disableHome
+id edit_dz
 id edit_query
 id edit_registr_login
 id edit_registr_name
@@ -787,8 +786,6 @@ id radio
 id right
 id right_icon
 id right_side
-id satr
-id saturday
 id screen
 id scrollIndicatorDown
 id scrollIndicatorUp
@@ -832,10 +829,10 @@ id text
 id text2
 id textSpacerNoButtons
 id textSpacerNoTitle
-id textView
 id textView2
 id textView3
 id textView4
+id textViewDz
 id text_dz_alert
 id thu
 id thursday
@@ -897,10 +894,11 @@ layout activity_director
 layout activity_for_teacher_make_dz
 layout activity_learner
 layout activity_main
-layout activity_rasp
 layout activity_rasp_pupil
 layout activity_registration
 layout activity_teacher
+layout activity_teacher_admin
+layout activity_teacher_rasp
 layout notification_action
 layout notification_action_tombstone
 layout notification_template_custom_big

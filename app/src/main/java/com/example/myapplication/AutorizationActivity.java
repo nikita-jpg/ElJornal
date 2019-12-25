@@ -58,7 +58,7 @@ public class AutorizationActivity extends Activity implements View.OnClickListen
         StrictMode.setThreadPolicy(policy);
 
 
-        a ="{\"id\":12,\"position\":\"Teacher\",\"login\":\"12\",\"password\":\"12\",\"name\":\"12\",\"surname\":\"12\",\"email\":\"12\",\"phone\":\"12\",\"qualification\":\"12\",\"is_admin\":true,\"permit\":12}";
+        a ="{\"id\":12,\"position\":\"Teacher\",\"child_id\":12,\"password\":\"12\",\"name\":\"12\",\"surname\":\"12\",\"email\":\"12\",\"phone\":\"12\",\"qualification\":\"12\",\"is_admin\":true,\"permit\":12,\"clas\":\"12\"}";
 
 
         //Видео на фоне
@@ -103,7 +103,6 @@ public class AutorizationActivity extends Activity implements View.OnClickListen
         return 0;
     }
 
-
     public void getJsonObject() throws IOException, JSONException {
         jsonObject=new JSONObject(a);
         //Response<JSONObject> jsonObject = jsonObjectCall.execute();
@@ -122,6 +121,27 @@ public class AutorizationActivity extends Activity implements View.OnClickListen
         Teacher teacher = new Teacher(id,name,surname,email,phone,qualification,is_admin,permit);
 
         return teacher;
+    }
+    public Learner startLearner() throws JSONException {
+        int id = jsonObject.getInt("id");
+        String name = jsonObject.getString("name");
+        String surname= jsonObject.getString("surname");
+        String clas = jsonObject.getString("clas");
+        Integer permit= jsonObject.getInt("permit");
+
+        Learner learner = new Learner(id,name,surname,clas,permit);
+
+        return learner;
+    }
+    public Parent startParent() throws JSONException {
+        int id = jsonObject.getInt("id");
+        String name = jsonObject.getString("name");
+        String surname= jsonObject.getString("surname");
+        int child_id = jsonObject.getInt("child_id");
+
+        Parent parent = new Parent(id,name,surname,child_id);
+
+        return parent;
     }
 
     @Override
@@ -164,6 +184,7 @@ public class AutorizationActivity extends Activity implements View.OnClickListen
                                     Teacher teacher = startTeacher();
                                     intent = new Intent(this,Teacher.class);
                                     intent.putExtra("teacher", (Parcelable) teacher);
+                                    intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
                                     startActivity(intent);
                                 }
                             } catch (JSONException e) {
@@ -172,7 +193,7 @@ public class AutorizationActivity extends Activity implements View.OnClickListen
                             //Закончили работать с учителем
                             break;
                         case "learner":
-                            //autGet = server.checkLearnerFromServer(name.getText().toString(),password.getText().toString());
+                            jsonObjectCall = server.checkPupilFromServer();
                             try {
                                 getJsonObject();
                             } catch (IOException e) {
@@ -181,12 +202,35 @@ public class AutorizationActivity extends Activity implements View.OnClickListen
                                 e.printStackTrace();
                             }
                             try {
-                                if (jsonObject.getInt("resultCode") == 1) {
-                                    backToast = Toast.makeText(getBaseContext(), "Вы ошиблись", Toast.LENGTH_SHORT);
-                                    backToast.show();
+                                if(checkJson() == 0){
+                                    Gson gson = new Gson();
+                                    Learner learner = startLearner();
+                                    intent = new Intent(this,Learner.class);
+                                    intent.putExtra("learner", (Parcelable) learner);
+                                    intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                                    startActivity(intent);
                                 }
-                                else {
-                                    //Запускаем ученика
+                            } catch (JSONException e) {
+                                e.printStackTrace();
+                            }
+                            break;
+                        case "parent":
+                            jsonObjectCall = server.checkParentFromServer();
+                            try {
+                                getJsonObject();
+                            } catch (IOException e) {
+                                e.printStackTrace();
+                            } catch (JSONException e) {
+                                e.printStackTrace();
+                            }
+                            try {
+                                if(checkJson() == 0){
+                                    Gson gson = new Gson();
+                                    Parent parent = startParent();
+                                    intent = new Intent(this,Parent.class);
+                                    intent.putExtra("parent", (Parcelable) parent);
+                                    intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                                    startActivity(intent);
                                 }
                             } catch (JSONException e) {
                                 e.printStackTrace();

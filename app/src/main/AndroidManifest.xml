@@ -10,16 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
         <activity android:name=".Registration" android:theme="@style/style_edit"></activity>
-        <activity android:name=".Director">
-        </activity>
+        <activity android:name=".Director"></activity>
         <activity android:name=".Rasp"></activity>
         <activity android:name=".Teacher"></activity>
-        <activity android:name=".AutorizationActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+        <activity android:name=".Parent"></activity>
+        <activity android:name=".AutorizationActivity"><intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter></activity>
+        <activity android:name=".Learner"></activity>
     </application>
 
 </manifest>

@@ -25,11 +25,17 @@ public class Learner extends Activity implements View.OnClickListener, Parcelabl
     String clas;
     int permit;
 
-    Learner(int id,String position,String login,String password,String name,String surname,String clas,int permit){
+
+    VideoView videoPlayer;
+
+    public Learner(){
+
+    }
+
+
+
+    public Learner(int id,String name,String surname,String clas,int permit){
         this.id=id;
-        this.position=position;
-        this.login=login;
-        this.password=password;
         this.name=name;
         this.surname=surname;
         this.clas=clas;
@@ -63,8 +69,8 @@ public class Learner extends Activity implements View.OnClickListener, Parcelabl
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        Intent intent =getIntent();
         setContentView(R.layout.activity_learner);
+        //Intent intent =getIntent();
 
         VideoView videoPlayer;
         videoPlayer =  findViewById(R.id.video_learner_meny);
@@ -85,7 +91,7 @@ public class Learner extends Activity implements View.OnClickListener, Parcelabl
         switch (v.getId()) {
             case R.id.btn_academic_performance:
                 Intent intent = new Intent(this, AcademicPerformanceTable.class);
-                 intent.putExtra("rasp",new Learner(id,position,login,password,name,surname,clas,permit));
+                 //intent.putExtra("rasp",new Learner(id,position,login,password,name,surname,clas,permit));
                 startActivity(intent);
             case R.id.btn_rasp_learner:
 
@@ -108,8 +114,13 @@ public class Learner extends Activity implements View.OnClickListener, Parcelabl
         dest.writeString(clas);
         dest.writeInt(permit);
     }
-
     public String getPosition(){
         return position;
     }
+    @Override
+    public void onResume() {
+        super.onResume();
+        videoPlayer.start( );
+    }
+
 }

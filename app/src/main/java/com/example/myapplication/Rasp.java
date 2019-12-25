@@ -12,6 +12,7 @@ import android.text.method.ScrollingMovementMethod;
 import android.view.ContextThemeWrapper;
 import android.view.Gravity;
 import android.view.View;
+import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TableLayout;
 import android.widget.TableRow;
@@ -39,7 +40,6 @@ public class Rasp extends AppCompatActivity implements View.OnClickListener {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_rasp_pupil);
-
 
         i=0;
 
@@ -141,14 +141,7 @@ public class Rasp extends AppCompatActivity implements View.OnClickListener {
 
     public void RaspForTeacher(){
 
-
-
-
-
-
-
         //Для учителя
-        /*
         Button[] btns=new Button[40];
         int tekLay=1;
         int tekBtn=0;
@@ -171,7 +164,7 @@ public class Rasp extends AppCompatActivity implements View.OnClickListener {
                 tekBtn++;
             }
             tekLay++;
-        }*/
+        }
     }
 
     @Override

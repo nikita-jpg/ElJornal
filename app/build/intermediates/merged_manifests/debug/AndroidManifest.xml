@@ -23,10 +23,10 @@
         <activity
             android:name="com.example.myapplication.Registration"
             android:theme="@style/style_edit" />
-        <activity android:name="com.example.myapplication.Director" >
-        </activity>
+        <activity android:name="com.example.myapplication.Director" />
         <activity android:name="com.example.myapplication.Rasp" />
         <activity android:name="com.example.myapplication.Teacher" />
+        <activity android:name="com.example.myapplication.Parent" />
         <activity android:name="com.example.myapplication.AutorizationActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -34,6 +34,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name="com.example.myapplication.Learner" />
     </application>
 
 </manifest>

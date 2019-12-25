@@ -2,9 +2,6 @@ package com.example.myapplication;
 
 import org.json.JSONObject;
 
-import java.util.HashMap;
-import java.util.List;
-
 import retrofit2.Call;
 import retrofit2.http.GET;
 import retrofit2.http.POST;
@@ -12,7 +9,7 @@ import retrofit2.http.POST;
 public interface Server {
 
     //Авторизация учителя
-    @GET("messages1.json")//Возвращает объект класса Teacher
+    @GET("aut/login")//Возвращает объект класса Teacher
     Call<JSONObject> checkTeacherFromServer();
 
     //Регистрация учителя
@@ -21,25 +18,25 @@ public interface Server {
 
 
     //Авторизация ученика
-    @GET("getLearner")
-    Call<JSONObject> checkLearnerFromServer(String login,String password);
+    @GET("aut/login")
+    Call<JSONObject> checkPupilFromServer();
 
     //Регистрация ученика
-    @POST("setTeacher")//Возвращает объект класса Teacher
+    @POST("auth/register")//Возвращает объект класса Teacher
     Call<JSONObject> registerPupilToServer(String login,String password,String name,String surname,String position,String clas);
 
 
     //Авторизация родителя
-    @GET("getLearner")
-    Call<JSONObject> checkParentFromServer(String login,String password);
+    @GET("aut/login")
+    Call<JSONObject> checkParentFromServer();
 
     //Регистрация родителя
-    @POST("setTeacher")//Возвращает объект класса Teacher
+    @POST("auth/register")//Возвращает объект класса Teacher
     Call<JSONObject> registerParentToServer(String login,String password,String name,String surname,String position,int child_id);
 
-
-
-
+    //Выход
+    /*@POST("auth/logout")
+    Void logout();*/
 
 
 
