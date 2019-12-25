@@ -114,10 +114,10 @@ public class Rasp extends AppCompatActivity implements View.OnClickListener {
 
         try {
             RaspForLearner((TableLayout) findViewById(R.id.tab_monday),"Понедельник","monday");
-            RaspForLearner((TableLayout) findViewById(R.id.tab_monday),"Вторник","tuesday");
-            RaspForLearner((TableLayout) findViewById(R.id.tab_monday),"Среда","wednesday");
-            RaspForLearner((TableLayout) findViewById(R.id.tab_monday),"Четверг","thursday");
-            RaspForLearner((TableLayout) findViewById(R.id.tab_monday),"Пятница","friday");
+            RaspForLearner((TableLayout) findViewById(R.id.tab_tuesday),"Вторник","tuesday");
+            RaspForLearner((TableLayout) findViewById(R.id.tab_wensday),"Среда","wednesday");
+            RaspForLearner((TableLayout) findViewById(R.id.tab_thursday),"Четверг","thursday");
+            RaspForLearner((TableLayout) findViewById(R.id.tab_friday),"Пятница","friday");
         } catch (JSONException e) {
             e.printStackTrace();
         }
@@ -140,7 +140,8 @@ public class Rasp extends AppCompatActivity implements View.OnClickListener {
             TableRow tableRow = new TableRow(this);
             textViews[i] = new TextView(this);
             g = jsonObject.getJSONArray(dayEng).getJSONObject(k).getString("name");
-            textViews[i].setText(g);
+            if(g.length()>8) g=g.substring(0,9)+".";
+            textViews[i].setText(String.valueOf(k+1)+". "+g);
             textViews[i].setTextColor(Color.parseColor("#000002"));
             final Context contextTextViewDz = new ContextThemeWrapper(this, R.style.style_dz_textview);
             TextView button=new TextView(contextTextViewDz);

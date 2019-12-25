@@ -149,8 +149,7 @@ public class AutorizationActivity extends Activity implements View.OnClickListen
                 break;
             case R.id.btn_aut:
                 if (name.length()>=1 && password.length()>=1 && tekStatus!="") {
-                    switch (tekStatus) {
-                        case "teacher":
+
                             //Работаем с учителем
                             jsonObjectCall = server.checkTeacherFromServer();
                             try {
@@ -163,9 +162,16 @@ public class AutorizationActivity extends Activity implements View.OnClickListen
                             try {
                                 if(checkJson() == 0){
                                     Gson gson = new Gson();
-                                    Teacher teacher = startTeacher();
-                                    intent = new Intent(this,Teacher.class);
-                                    intent.putExtra("teacher", (Parcelable) teacher);
+                                    if(jsonObject.getString("position").equals("teacher")){
+                                        Teacher teacher = startTeacher();
+                                        intent = new Intent(this,Teacher.class);
+                                        intent.putExtra("teacher", (Parcelable) teacher);
+                                    }
+                                    else {
+                                        Teacher teacher = startTeacher();
+                                        intent = new Intent(this,Teacher.class);
+                                        intent.putExtra("teacher", (Parcelable) teacher);
+                                    }
                                     intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
                                     startActivity(intent);
                                 }
@@ -174,29 +180,7 @@ public class AutorizationActivity extends Activity implements View.OnClickListen
                             }
                             //Закончили работать с учителем
                             break;
-                        case "learner":
-                            jsonObjectCall = server.checkPupilFromServer();
-                            try {
-                                getJsonObject();
-                            } catch (IOException e) {
-                                e.printStackTrace();
-                            } catch (JSONException e) {
-                                e.printStackTrace();
-                            }
-                            try {
-                                if(checkJson() == 0){
-                                    Gson gson = new Gson();
-                                    Learner learner = startLearner();
-                                    intent = new Intent(this,Learner.class);
-                                    intent.putExtra("learner", (Parcelable) learner);
-                                    intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
-                                    startActivity(intent);
-                                }
-                            } catch (JSONException e) {
-                                e.printStackTrace();
-                            }
-                            break;
-                    }
+
                 }
                 else {
                     backToast = Toast.makeText(getBaseContext(), "Вы ошиблись", Toast.LENGTH_SHORT);
