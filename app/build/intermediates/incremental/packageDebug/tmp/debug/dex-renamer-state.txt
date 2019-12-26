@@ -1,4 +1,4 @@
-#Thu Dec 26 04:14:01 MSK 2019
+#Thu Dec 26 04:26:15 MSK 2019
 base.0=C\:\\Users\\Nikita\\Desktop\\Samsung\\GitHub\\ElKornalJava\\ElJornal\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\out\\classes.dex
 path.0=classes.dex
 renamed.0=classes.dex

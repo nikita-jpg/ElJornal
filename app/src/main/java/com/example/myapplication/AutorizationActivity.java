@@ -92,7 +92,7 @@ public class AutorizationActivity extends Activity implements View.OnClickListen
 
 
         retrofit = new Retrofit.Builder()
-                .baseUrl("https://github.com/nikita-jpg/my/blob/master/")
+                .baseUrl("https://github.com/nikita-jpg/ElJornal/blob/develop/app/src/main/res/raw/")
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
 
