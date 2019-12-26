@@ -89,7 +89,7 @@ public class Learner extends Activity implements View.OnClickListener, Parcelabl
         rasp=findViewById(R.id.btn_rasp_learner);
         rasp.setOnClickListener(this);
         academik=findViewById(R.id.btn_academic_performance);
-        //academik.setOnClickListener(this);
+        academik.setOnClickListener(this);
 
 
     }
@@ -100,10 +100,12 @@ public class Learner extends Activity implements View.OnClickListener, Parcelabl
             case R.id.btn_academic_performance:
                 Intent intent = new Intent(this, AcademicPerformanceTable.class);
                  //intent.putExtra("rasp",new Learner(id,position,login,password,name,surname,clas,permit));
+                //intent.putInt("id",id);
                 startActivity(intent);
                 break;
             case R.id.btn_rasp_learner:
                 Intent intent1 = new Intent(this,Rasp.class);
+                //intent.putInt("id",id);
                 startActivity(intent1);
                 break;
         }

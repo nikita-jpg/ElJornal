@@ -54,6 +54,10 @@ public class Rasp extends AppCompatActivity implements View.OnClickListener {
 
     String a;
 
+
+
+    int id;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -83,8 +87,6 @@ public class Rasp extends AppCompatActivity implements View.OnClickListener {
         hashMap.put(3,R.id.wen);
         hashMap.put(4,R.id.thu);
         hashMap.put(5,R.id.frid);
-
-
 
 
 
@@ -126,7 +128,7 @@ public class Rasp extends AppCompatActivity implements View.OnClickListener {
     }
     //Для ученика
     public void RaspForLearner(TableLayout layoutRoot,String day,String dayEng) throws JSONException {
-        int j=i+8;
+        int j=i+5;
         TableRow tableRowDay = new TableRow(this);
         TextView textDay= new TextView(this);
         textDay.setTextColor(Color.parseColor("#000002"));
@@ -136,7 +138,6 @@ public class Rasp extends AppCompatActivity implements View.OnClickListener {
         String g;
         int k=0;
         while(i<j){
-            if(k == 5)k--;
             TableRow tableRow = new TableRow(this);
             textViews[i] = new TextView(this);
             g = jsonObject.getJSONArray(dayEng).getJSONObject(k).getString("name");
@@ -146,7 +147,7 @@ public class Rasp extends AppCompatActivity implements View.OnClickListener {
             final Context contextTextViewDz = new ContextThemeWrapper(this, R.style.style_dz_textview);
             TextView button=new TextView(contextTextViewDz);
             button.setOnClickListener(this);
-            button.setText("Домашняя работа GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG");
+            button.setText(jsonObject.getJSONArray(dayEng).getJSONObject(k).getString("homework"));
             button.setId(i);
             TextView textView=new TextView(this);
             textView.setTextColor(Color.parseColor("#000002"));

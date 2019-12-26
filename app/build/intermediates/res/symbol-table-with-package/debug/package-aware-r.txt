@@ -701,8 +701,6 @@ id blocking
 id bottom
 id btn_academic_performance
 id btn_aut
-id btn_aut_learner
-id btn_aut_teacher
 id btn_make_dz
 id btn_make_parent
 id btn_make_pupil
