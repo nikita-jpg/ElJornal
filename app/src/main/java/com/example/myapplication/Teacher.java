@@ -135,7 +135,7 @@ public class Teacher extends Activity implements View.OnClickListener, Parcelabl
 
     public void RaspForTeacher(){
 
-        layoutParams= new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT,LinearLayout.LayoutParams.MATCH_PARENT);
+        layoutParams= new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT,LinearLayout.LayoutParams.WRAP_CONTENT);
         //Для учителя
         Button[] btns=new Button[40];
         int tekLay=1;
@@ -149,13 +149,14 @@ public class Teacher extends Activity implements View.OnClickListener, Parcelabl
             for(int j=0;j<a.length;j++){
                 btns[tekBtn] = new Button(this);
                 btns[tekBtn].setOnClickListener(this);
+                btns[tekBtn].setTextColor(Color.parseColor("#000002"));
                 btns[tekBtn].setText(a[j]);
                 btns[tekBtn].setId(tekBtn);
-                btns[tekBtn].setTextColor(Color.parseColor("#000000"));
-                btns[tekBtn].setPadding(0,20,0,20);
+                btns[tekBtn].setPadding(4,2,4,2);
                 btns[tekBtn].setGravity(Gravity.CENTER);
-                btns[tekBtn].setBackgroundResource(R.drawable.fortextview);
+                btns[tekBtn].setBackgroundResource(R.drawable.botton);
                 LinearLayout layout = findViewById(hashMap.get(tekLay));
+                layoutParams.setMargins(150,30,150,30);
                 layout.addView(btns[tekBtn],layoutParams);
                 tekBtn++;
             }

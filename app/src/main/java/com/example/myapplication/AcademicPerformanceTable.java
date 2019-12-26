@@ -57,11 +57,13 @@ public class AcademicPerformanceTable extends AppCompatActivity implements View.
 
 
     int id;
+    int cred;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.academic_performance_activity);
+
 
         i=0;
 
@@ -90,7 +92,7 @@ public class AcademicPerformanceTable extends AppCompatActivity implements View.
 
 
 
-        a = "[{\"arr_marks\":[\"5\",\"5\",\"5\",\"5\",\"5\",\"5\",\"5\",\"5\",\"5\",\"5\",\"5\",\"5\",\"5\",\"5\",\"5\",\"5\",\"5\",\"5\"],\"name\":\"\u041c\u0430\u0442\u0435\u043c\u0430\u0442\u0438\u043a\u0430\"},{\"arr_marks\":[],\"name\":\"\u0411\u0438\u043e\u043b\u043e\u0433\u0438\u044f\"},{\"arr_marks\":[],\"name\":\"\u0425\u0438\u043c\u0438\u044f\"},{\"arr_marks\":[],\"name\":\"\u0424\u0438\u0437\u0438\u043a\u0430\"},{\"arr_marks\":[],\"name\":\"\u0420\u0443\u0441\u0441\u043a\u0438\u0439 \u044f\u0437\u044b\u043a\"},{\"arr_marks\":[],\"name\":\"\u041b\u0438\u0442\u0435\u0440\u0430\u0442\u0443\u0440\u0430\"},{\"arr_marks\":[],\"name\":\"\u0418\u0441\u0442\u043e\u0440\u0438\u044f\"},{\"arr_marks\":[],\"name\":\"\u0418\u043d\u0444\u043e\u0440\u043c\u0430\u0442\u0438\u043a\u0430\"},{\"arr_marks\":[],\"name\":\"\u0424\u0438\u0437-\u0440\u0430\"},{\"arr_marks\":[],\"name\":\"\u0410\u043b\u0433\u0435\u0431\u0440\u0430\"},{\"arr_marks\":[],\"name\":\"\u0413\u0435\u043e\u043c\u0435\u0442\u0440\u0438\u044f\"},{\"arr_marks\":[],\"name\":\"\u0410\u043d\u0433\u043b.\u044f\u0437.\"},{\"arr_marks\":[],\"name\":\"\u0413\u0435\u043e\u0433\u0440\u0430\u0444\u0438\u044f\"},{\"arr_marks\":[],\"name\":\"\u041e\u0431\u0449\u0435\u0441\u0442\u0432\u043e\u0437\u043d\u0430\u043d\u0438\u0435\"},{\"arr_marks\":[],\"name\":\"\u041e\u043a\u0440\u0443\u0436\u0430\u044e\u0449\u0438\u0439 \u043c\u0438\u0440\"},{\"arr_marks\":[],\"name\":\"\u0418\u0417\u041e\"},{\"arr_marks\":[],\"name\":\"\u041c\u0443\u0437\u044b\u043a\u0430\"},{\"arr_marks\":[],\"name\":\"\u041e\u0411\u0416\"},{\"arr_marks\":[],\"name\":\"\u041f\u0440\u0430\u0432\u043e\"},{\"arr_marks\":[],\"name\":\"\u042d\u043a\u043e\u043d\u043e\u043c\u0438\u043a\u0430\"}]";
+        a = "[{\"arr_marks\":[\"5\",\"5\",\"5\",\"5\",\"5\",\"5\",\"5\"],\"name\":\"\u041c\u0430\u0442\u0435\u043c\u0430\u0442\u0438\u043a\u0430\"},{\"arr_marks\":[],\"name\":\"\u0411\u0438\u043e\u043b\u043e\u0433\u0438\u044f\"},{\"arr_marks\":[],\"name\":\"\u0425\u0438\u043c\u0438\u044f\"},{\"arr_marks\":[],\"name\":\"\u0424\u0438\u0437\u0438\u043a\u0430\"},{\"arr_marks\":[],\"name\":\"\u0420\u0443\u0441\u0441\u043a\u0438\u0439 \u044f\u0437\u044b\u043a\"},{\"arr_marks\":[],\"name\":\"\u041b\u0438\u0442\u0435\u0440\u0430\u0442\u0443\u0440\u0430\"},{\"arr_marks\":[],\"name\":\"\u0418\u0441\u0442\u043e\u0440\u0438\u044f\"},{\"arr_marks\":[],\"name\":\"\u0418\u043d\u0444\u043e\u0440\u043c\u0430\u0442\u0438\u043a\u0430\"},{\"arr_marks\":[],\"name\":\"\u0424\u0438\u0437-\u0440\u0430\"},{\"arr_marks\":[],\"name\":\"\u0410\u043b\u0433\u0435\u0431\u0440\u0430\"},{\"arr_marks\":[],\"name\":\"\u0413\u0435\u043e\u043c\u0435\u0442\u0440\u0438\u044f\"},{\"arr_marks\":[],\"name\":\"\u0410\u043d\u0433\u043b.\u044f\u0437.\"},{\"arr_marks\":[],\"name\":\"\u0413\u0435\u043e\u0433\u0440\u0430\u0444\u0438\u044f\"},{\"arr_marks\":[],\"name\":\"\u041e\u0431\u0449\u0435\u0441\u0442\u0432\u043e\u0437\u043d\u0430\u043d\u0438\u0435\"},{\"arr_marks\":[],\"name\":\"\u041e\u043a\u0440\u0443\u0436\u0430\u044e\u0449\u0438\u0439 \u043c\u0438\u0440\"},{\"arr_marks\":[],\"name\":\"\u0418\u0417\u041e\"},{\"arr_marks\":[],\"name\":\"\u041c\u0443\u0437\u044b\u043a\u0430\"},{\"arr_marks\":[],\"name\":\"\u041e\u0411\u0416\"},{\"arr_marks\":[],\"name\":\"\u041f\u0440\u0430\u0432\u043e\"},{\"arr_marks\":[],\"name\":\"\u042d\u043a\u043e\u043d\u043e\u043c\u0438\u043a\u0430\"}]";
 
         bilder = new AlertDialog.Builder(this);
         view = getLayoutInflater().inflate(R.layout.activity_alert_dz, null,true);
@@ -153,11 +155,12 @@ public class AcademicPerformanceTable extends AppCompatActivity implements View.
             TextView button=new TextView(contextTextViewDz);
             button.setOnClickListener(this);
             button.setId(i);
+            cred=0;
             button.setText(makeStrScores(i));
             //считаем оценки
             TextView textView=new TextView(this);
             textView.setTextColor(Color.parseColor("#000002"));
-            textView.setText("Кабинет");
+            textView.setText(String.valueOf(cred));
             tableRow.addView(textViews[i],layoutParamsPred);
             tableRow.addView(button,layoutParamsBtn);
             tableRow.addView(textView,layoutParamsOc);
@@ -195,10 +198,15 @@ public class AcademicPerformanceTable extends AppCompatActivity implements View.
 
     public String makeStrScores(int k) throws JSONException {
         String a="";
+        int j=0;
      for(int i=0;i<jsonObject.getJSONObject(k).getJSONArray("arr_marks").length();i++){
          a=a.concat(jsonObject.getJSONObject(k).getJSONArray("arr_marks").getString(i)+", ");
+         cred +=jsonObject.getJSONObject(k).getJSONArray("arr_marks").getInt(i);
+         j++;
      }
-     if(a.length()>=3) return  a.substring(0,a.length()-1);
+     if(j==0)cred = 0;
+     else cred=cred/j;
+     if(a.length()>=3) return  a.substring(0,a.length()-2);
      else return a;
     }
 
@@ -213,6 +221,8 @@ public class AcademicPerformanceTable extends AppCompatActivity implements View.
         textView.setTextColor(Color.parseColor("#000002"));
         String a =((TextView)findViewById(v.getId())).getText().toString();
         textView.setText(a);
+        TextView y = view.findViewById(R.id.dialog_titile);
+        y.setText("Ваши оценки");
         al.show();
     }
 }

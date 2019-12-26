@@ -9,7 +9,7 @@ import retrofit2.http.POST;
 public interface Server {
 
     //Авторизация учителя
-    @GET("README.md")//Возвращает объект класса Teacher
+    @GET("File.json")//Возвращает объект класса Teacher
     Call<JSONObject> checkTeacherFromServer();
 
     //Регистрация учителя

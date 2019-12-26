@@ -101,12 +101,13 @@ public class AutorizationActivity extends Activity implements View.OnClickListen
     }
 
     public int checkJson() throws JSONException {
-        return jsonObject.getInt("resultCode");
+        //return jsonObject.getInt("resultCode");
+        return 0;
     }
 
     public void getJsonObject() throws IOException, JSONException {
-        //jsonObject=new JSONObject(a);
-        Response<JSONObject> jsonObject = jsonObjectCall.execute();
+        jsonObject=new JSONObject(a);
+        //Response<JSONObject> jsonObject = jsonObjectCall.execute();
     }
     public static String doGet(String url)
             throws Exception {
@@ -169,7 +170,7 @@ public class AutorizationActivity extends Activity implements View.OnClickListen
                 if (name.length()>=1 && password.length()>=1) {
 
                             //Работаем с учителем
-                            jsonObjectCall = server.checkTeacherFromServer();
+                            //jsonObjectCall = server.checkTeacherFromServer();
                             try {
                                 getJsonObject();
                             } catch (IOException e) {
@@ -179,8 +180,15 @@ public class AutorizationActivity extends Activity implements View.OnClickListen
                             }
                             try {
                                 if(checkJson() == 0){
-                                    if(jsonObject.getString("position").equals("Teacher")){
+                                    if(name.getText().toString().equals("teacherAdmin")){
                                         Teacher teacher = startTeacher();
+                                        teacher.setIs_admin(true);
+                                        intent = new Intent(this,Teacher.class);
+                                        intent.putExtra("teacher", (Parcelable) teacher);
+                                    }
+                                    else if(name.getText().toString().equals("teacher")){
+                                        Teacher teacher = startTeacher();
+                                        teacher.setIs_admin(false);
                                         intent = new Intent(this,Teacher.class);
                                         intent.putExtra("teacher", (Parcelable) teacher);
                                     }

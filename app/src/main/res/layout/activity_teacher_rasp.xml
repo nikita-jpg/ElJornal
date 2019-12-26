@@ -22,7 +22,7 @@
                 android:layout_marginTop="10dp"
                 android:layout_marginRight="20dp"
                 android:layout_marginLeft="20dp"
-                android:background="@drawable/days"
+                android:background="@drawable/reg_lay"
                 android:orientation="vertical">
 
 
@@ -30,9 +30,8 @@
                     android:id="@+id/monday"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/days"
+                    android:background="@drawable/reg_lay"
                     android:gravity="center"
-                    android:paddingTop="7dp"
                     android:paddingBottom="7dp"
                     android:text="Понедельник"
                     android:textColor="#422E2E"
@@ -47,17 +46,16 @@
                 android:layout_marginTop="10dp"
                 android:layout_marginRight="20dp"
                 android:layout_marginLeft="20dp"
-                android:background="@drawable/days"
+                android:background="@drawable/reg_lay"
                 android:orientation="vertical">
                 <TextView
                     android:id="@+id/tuesday"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:paddingTop="7dp"
-                    android:paddingBottom="7dp"
                     android:gravity="center"
                     android:textSize="24sp"
-                    android:background="@drawable/days"
+                    android:background="@drawable/reg_lay"
                     android:textColor="#422E2E"
                     android:textStyle = ""
                     android:text="Вторник" />
@@ -70,7 +68,7 @@
                 android:layout_marginTop="10dp"
                 android:layout_marginRight="20dp"
                 android:layout_marginLeft="20dp"
-                android:background="@drawable/days"
+                android:background="@drawable/reg_lay"
                 android:orientation="vertical">
                 <TextView
                     android:id="@+id/wednesday"
@@ -80,7 +78,7 @@
                     android:paddingBottom="7dp"
                     android:gravity="center"
                     android:textSize="24sp"
-                    android:background="@drawable/days"
+                    android:background="@drawable/reg_lay"
                     android:textColor="#422E2E"
                     android:textStyle = ""
                     android:text="Среда" />
@@ -93,7 +91,7 @@
                 android:layout_marginTop="10dp"
                 android:layout_marginRight="20dp"
                 android:layout_marginLeft="20dp"
-                android:background="@drawable/days"
+                android:background="@drawable/reg_lay"
                 android:orientation="vertical">
                 <TextView
                     android:id="@+id/thursday"
@@ -103,7 +101,7 @@
                     android:paddingBottom="7dp"
                     android:gravity="center"
                     android:textSize="24sp"
-                    android:background="@drawable/days"
+                    android:background="@drawable/reg_lay"
                     android:textColor="#422E2E"
                     android:textStyle = ""
                     android:text="Четверг" />
@@ -116,17 +114,16 @@
                 android:layout_marginTop="10dp"
                 android:layout_marginRight="20dp"
                 android:layout_marginLeft="20dp"
-                android:background="@drawable/days"
+                android:background="@drawable/reg_lay"
                 android:orientation="vertical">
                 <TextView
                     android:id="@+id/friday"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:paddingTop="7dp"
                     android:paddingBottom="7dp"
                     android:gravity="center"
                     android:textSize="24sp"
-                    android:background="@drawable/days"
+                    android:background="@drawable/reg_lay"
                     android:textColor="#422E2E"
                     android:textStyle = ""
                     android:text="Пятница" />
